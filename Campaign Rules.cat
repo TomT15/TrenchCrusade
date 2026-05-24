@@ -766,6 +766,186 @@ items, reduce the Cost of any Weapons by 1 ☼ to a minimum of 1 ☼ .</descript
                         </selectionEntry>
                       </selectionEntries>
                     </selectionEntryGroup>
+                    <selectionEntryGroup name="Rare Table" id="68cf-765f-cad9-6812" hidden="false">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="[5] Angelic Instrument" hidden="false" id="4daa-b4a3-269f-7085">
+                          <profiles>
+                            <profile name="Angelic Instrument" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="cd46-37e2-f48f-e11a">
+                              <characteristics>
+                                <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
+                                <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
+                                <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
+                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find an otherworldly instrument on the battlefield besides the wracked body of a lesser angel – fallen or divine. Add an Angelic Instrument to your warband’s roster for free. It’s identical to a Musical Instrument (including their equipment restrictions and LIMIT), except its effect has a range of 8” instead of 4”. If your warband is at its LIMIT for Musical Instruments, it can immediately replace an existing Musical Instrument with the Angelic Instrument.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5930-cbf7-2582-3381" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[9] Abandoned Prophetic Radio Post" hidden="false" id="0b07-a40a-70eb-41be">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b41-e6e9-56d5-1b20" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Abandoned Prophetic Radio Post" id="f782-e19a-164d-4b5f" hidden="false">
+                              <description>You find a hastily-abandoned Synod
+of Strategic Prophecy station, with scribbled predictions and prophecies
+scattered amongst the disarray. Your Warband gains the Extra Dice
+Exploration Skill.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[11] Pot of Manna" hidden="false" id="94ff-4087-bdee-4198">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="966c-1f56-2fae-435f" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Pot of Manna" id="3393-905a-54fb-f673" hidden="false">
+                              <description>You find a cup blessed by God that provides endless
+nourishment. Add 10 👑 to the amount of loot you receive each 
+Exploration Step (including this one).</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[12] Ransacked Alchemist Workshop" hidden="false" id="2503-74f8-202d-0cd7">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13fe-8fc2-031f-c199" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Ransacked Alchemist Workshop" id="4eeb-20fd-a1e3-d62b" hidden="false">
+                              <description>Amidst the rubble, you find a few
+intact life-giving potions. Add Curative Fluids to your Warband’s Arsenal.
+Once, in any future Quartermaster Step, you can use the Curative Fluids
+to remove 1 Battle Scar (but not the effects of any Trauma) from a model
+in your Warband. Remove the Curative Fluids from your Warband Roster
+after they are used</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[15] Black Market" hidden="false" id="3d06-0b52-2e3b-bb89">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8eb-ae55-3251-347a" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Black Market" id="1965-0a62-0f26-ca5c" hidden="false">
+                              <description>You discover a major underground trading post in No
+Man’s Land. From now on, in the Quartermaster Step, you can purchase
+Glory Items costing 8 ☼ or less.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[17] Book of Golems" hidden="false" id="e875-7673-efb7-ca33">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85cf-46ab-b296-e5a7" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Book of Golems" id="0733-917b-50d0-d6f7" hidden="false">
+                              <description>You find a Rabbinic manual on creating Golems.
+Studying it allows you to create a Golem. Add Takwin Homunculus from
+The House of Wisdom Variant Warband in the Iron Sultanate Faction
+List to your Warband. It has the Human Hands Alchemical Formula,
+plus Alchemical Formulas worth a total of up to 50 👑 for free (you do 
+not have to pay for the Formulas that you choose). The Golem has the
+GOLEM Keyword, and replaces the SULTANATE Keyword with your
+Faction&apos;s Keyword. You can purchase Battlekit for it in the Quartermaster
+Step, using your own Armoury Tables instead of the ones in the Iron
+Sultanate Faction List. The model is treated as an Ally that can never be
+Promoted or receive additional Alchemical Formulas.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[21] Stash of Drugs &amp; Erotica" hidden="false" id="80a0-f6b6-1f35-ad9a">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="def7-d2c5-bf40-3fbc" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Stash of Drugs &amp; Erotica" id="6618-59ac-dc01-c78d" hidden="false">
+                              <description>You find a motherlode of forbidden objects
+and chemicals, highly sought after and in demand. Choose one of the
+following options:
+
+
+* Indulge: Add +1 DICE to Morale Checks for your Warband for the
+rest of the campaign.
+* Sell: Your Warband gains 120 👑.
+* Confiscate: Your Warband gains +4 ☼. Trench Pilgrims must select the
+Confiscate option.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[19] Ruined Church / Masjid / Synagogue" hidden="false" id="4ac3-09e3-7548-12f2">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee4f-0fb0-c859-6c51" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Ruined Church / Masjid / Synagogue" id="7bad-1073-ba6e-5c22" hidden="false">
+                              <description>You find a great shrine, temple or
+other religious building of faith. Upon its altar rests an object of great
+power waiting for you. Choose one of the following options:
+
+* Report: Your Warband gains +D4 ☼.
+* Keep: Choose one Glory Item worth up to 10 ☼, and add it
+to your Arsenal.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[23] Saint’s Reliquary" hidden="false" id="4bc2-16d4-311a-4a0c">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5705-9a32-ead8-35c6" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Saint’s Reliquary" id="6e9e-6394-c85e-eea0" hidden="false">
+                              <description>You discover the well-hidden reliquary of a fallen
+saint. Add a Saintly Relic to your Warband’s Arsenal. It is a piece of
+Equipment that can be given to any model that has the ELITE Keyword.
+A model that has a Saintly Relic gains the TOUGH Keyword, but loses
+the INFILTRATOR Keyword if it has it, and the opposing player can
+ignore the Cover and Defended Obstacle modifiers for attacks that
+target the model.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[25] High-Ranking Captive" hidden="false" id="c9cb-a37d-cc12-7754">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c119-adf0-cab7-674c" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="High-Ranking Captive" id="6a56-ab43-521d-af62" hidden="false">
+                              <description>You capture a high-ranking enemy – an officer of
+New Antioch, a Sultanate sheik, a shard of a fallen Black Grail Hegemon,
+a Pilgrim Prophet, a Mammonite merchant, or some other important
+personage. Choose one of the following options:
+
+
+* Ransom: Your Warband gains 100 👑.
+* Execute: Your Warband gains +4 ☼.
+* Imprison: Choose one Glory Item with a Cost of up to 8 ☼, and add it
+to your Arsenal.
+* Indenture: You keep the captive as a guide. Your Warband gains the Set
+Dice Exploration Skill.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[32] Abandoned Resurrection Machines" hidden="false" id="23c6-1c91-83d7-bf67">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41b7-3df5-3f5a-5e99" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Abandoned Resurrection Machines" id="0632-2b0e-7547-f8c9" hidden="false">
+                              <description>You find remnants of machines that
+were once used as part of the Meta-Christ Programme. Most of them
+are broken, torn apart by some immense force, but one of them works
+and can be dismantled. Add a Salvaged Resurrection Machine to your
+Warband’s Arsenal. In any future Quartermaster Step, you can use the
+Salvaged Resurrection Machine to remove 1 Battle Scar from a model in
+your Warband. Remove the Salvaged Resurrection Machine from your
+Warband Roster after it is used.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
                   </selectionEntryGroups>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Exploration Skills" id="ce06-c033-5a6b-c1d4" hidden="false" sortIndex="6">
