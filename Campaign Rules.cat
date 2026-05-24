@@ -548,6 +548,225 @@ The saint guides your troops before each battle. The model with the skull gains 
                       </modifiers>
                     </selectionEntry>
                   </selectionEntries>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Common Table" id="0939-6ee0-bdad-c0a4" hidden="false">
+                      <comment>Common Table</comment>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="[4] Moonshine Stash" hidden="false" id="8b31-f9b3-fb7e-0e2e">
+                          <rules>
+                            <rule name="Moonshine Stash" id="2646-80a1-434b-fe76" hidden="false">
+                              <description>You find a hidden stash of strong distilled alcohol, its
+origin uncertain and unsafe. Choose one of the following options:
+
+* Distribute (New Antioch and Trench Pilgrims only): Add +2 DICE to
+Morale Checks in your next game.
+
+* Destroy ( New Antioch, Trench Pilgrims, and Iron Sultanate only):
+Up to two models in your Warband with the ELITE Keyword earn +1
+Experience Point each. If this entitles the model to an Advancement
+Roll, make the roll immediately.
+
+* Sell (Any Warband): Add 30 👑 to your Strongbox.</description>
+                            </rule>
+                          </rules>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="251a-37d6-cd01-13ee" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[5] Heavy Weapons Cache" hidden="false" id="8f75-893d-c4c8-7095">
+                          <rules>
+                            <rule name="Heavy Weapons Cache" id="e2d9-d54a-648a-9c1b" hidden="false">
+                              <description>You find a hidden weapons cache. Choose one of
+the following options:
+
+
+* Surplus: Choose one piece of Battlekit with the HEAVY Keyword from
+your Warband’s Armoury Tables and add it to your Arsenal.
+
+
+* Specialise: Choose one Glory Item with a Cost of up to 5 ☼, and add it
+to your Arsenal.</description>
+                            </rule>
+                          </rules>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9700-8ef0-b72c-f4a7" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[6] Trench Shrine: Shrine" hidden="false" id="e68f-100b-7445-8570">
+                          <profiles>
+                            <profile name="Trench Shrine: Shrine" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="4f28-9ead-5979-686f">
+                              <characteristics>
+                                <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
+                                <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
+                                <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
+                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Add a Field Shrine to your warband’s roster for free. 
+(Note: this adds a single Field Shrine for armies without one in their list per time taken.)</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0281-4ee0-74a3-c538" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[8] Ruined House" hidden="false" id="f9a1-b9eb-b443-d3c6">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a664-eb10-0920-e66f" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Ruined House" id="2755-aa75-0d2c-cebd" hidden="false">
+                              <description>This house has been obliterated by heavy weaponry, its
+inhabitants ripped apart. Choose one of the following options:
+
+
+* Rummage: Choose one or more pieces of Equipment from your
+Warband’s Armoury Tables that are worth a total of up to 30 👑, and 
+add them to your Arsenal.
+
+
+* Relic: Choose one Glory Item worth up to 7 ☼ and add it
+to your Arsenal.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[9] Survivor" hidden="false" id="91f3-ad70-4cd2-7b7c">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9119-4813-33c0-d302" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Survivor" id="eb5b-9d68-912c-b662" hidden="false">
+                              <description>You find a soldier staggering in No Man’s Land; a deserter,
+perhaps, or a squaddie whose comrades were wiped out by one of the
+horrors roaming the battlefields of the Great War. It is time to put them
+to work. Add the model listed below for your Faction to your Warband.
+The model does not have any Battlekit (you can purchase Battlekit for it
+in the Quartermaster Step).
+
+
+* New Antioch: A Yeoman without a Ranged Weapon.
+
+
+* Trench Pilgrims: Ecclesiastical Prisoner.
+
+
+* Iron Sultanate: Azeb.
+
+
+* Heretic Legions: Wretched.
+
+
+* Black Grail: Grail Thrall.
+
+
+* The Court: Wretched.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[10] Fallen Soldier" hidden="false" id="a4a9-5be5-c1df-f446">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9873-6fcf-c7ae-8b91" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Fallen Soldier" id="5b9e-ba22-fc71-fa12" hidden="false">
+                              <description>You find the body of a fallen soldier. Choose one Ranged
+Weapon from your Warband’s Armoury Tables worth up to 15 👑, and 
+add it to your Arsenal along with a Combat Helmet and suit of Standard
+Armour. Then roll a D6. On a 4+, you can add one of the following to
+your Arsenal: a Medi-kit or a Mountaineer’s Kit, or a Shovel.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[11] Trench Merchant" hidden="false" id="3851-882f-60c5-d77c">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="447d-6572-469b-b6a5" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Trench Merchant" id="5241-75aa-912d-a12d" hidden="false">
+                              <description>You establish contact with a Trench Merchant.
+Choose one of the following options:
+
+
+* Report: Your Warband gains 2 ☼.
+
+
+* Trade: From now on, in the Quartermaster Step, you can purchase
+Glory Items costing 5 ☼ or less.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[14] Map &amp; Document Bag" hidden="false" id="984c-a13d-e39b-3cc2">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="091a-774e-2ba7-cc0d" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Map &amp; Document Bag" id="7cd6-7201-0754-dcd6" hidden="false">
+                              <description>Marked with carefully concealed signs, you find
+a hidden satchel containing maps and intelligence. Your Warband gains
+the Reroll Exploration Skill.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[16] Sniper’s Lair" hidden="false" id="f2d0-fd8f-fd10-76d3">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94a1-9e85-2f46-7001" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Sniper&apos;s Lair" id="4cd8-6d10-ff92-e7a6" hidden="false">
+                              <description>You find the well-camouflaged position of a sniper. Add the
+Battlekit listed below for your Faction to your Arsenal. If there are any
+items you are not allowed to add to your Arsenal for any reason, add their
+Cost in 👑 to your Strongbox instead.
+
+
+* New Antioch or Trench Pilgrims: Sniper Rifle or Sniper Scope.
+* Iron Sultanate: Siege Jezzail, Alchemical Ammunition, and a
+Cloak of Alamut.
+* Heretic Legions: Automatic Rifle.
+* Black Grail: Corruption Belcher and Field Shrine.
+* The Court: Ophidian Rifle.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[18] Fallen Knight" hidden="false" id="63f9-71a8-ddcd-6cf7">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7721-bcc0-b342-e30d" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Fallen Knight" id="0b5b-8efd-5b05-3bab" hidden="false">
+                              <description>You find a fallen hero of past ages. Perhaps a baron
+from New Antioch, a great Faris of the Sultanate, or a Plague Knight of
+Beelzebub. Choose one of the following options:
+
+
+* Loot: Add a suit of Reinforced Armour, a Trench Shield, a Combat
+Helmet, and either a Sword or Polearm to your Warband’s Arsenal.
+* Memorialise: Your Warband gains 2 ☼.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[20] Warband Strongbox" hidden="false" id="7b93-8eca-f177-9d78">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="abe2-03ca-ed13-5d62" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Warband Strongbox" id="99ef-eaaf-0ced-6a6e" hidden="false">
+                              <description>You find the hidden strongbox of a Warband lost in
+the Great War. Choose one of the following options:
+
+
+* Trove: Choose one or more pieces of Battlekit from your Warband’s
+Armoury Tables that are worth a total of up to 120 👑, and add them 
+to your Arsenal.
+
+
+* Panoply: Choose one or more Glory Items worth a total of up to 9 ☼,
+and add them to your Arsenal. In addition, when you are choosing the
+items, reduce the Cost of any Weapons by 1 ☼ to a minimum of 1 ☼ .</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Exploration Skills" id="ce06-c033-5a6b-c1d4" hidden="false" sortIndex="6">
                   <selectionEntries>
