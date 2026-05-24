@@ -549,7 +549,7 @@ The saint guides your troops before each battle. The model with the skull gains 
                     </selectionEntry>
                   </selectionEntries>
                   <selectionEntryGroups>
-                    <selectionEntryGroup name="Common Table" id="0939-6ee0-bdad-c0a4" hidden="false">
+                    <selectionEntryGroup name="Common Table" id="0939-6ee0-bdad-c0a4" hidden="false" sortIndex="1">
                       <comment>Common Table</comment>
                       <selectionEntries>
                         <selectionEntry type="upgrade" import="true" name="[4] Moonshine Stash" hidden="false" id="8b31-f9b3-fb7e-0e2e">
@@ -766,7 +766,7 @@ items, reduce the Cost of any Weapons by 1 ☼ to a minimum of 1 ☼ .</descript
                         </selectionEntry>
                       </selectionEntries>
                     </selectionEntryGroup>
-                    <selectionEntryGroup name="Rare Table" id="68cf-765f-cad9-6812" hidden="false">
+                    <selectionEntryGroup name="Rare Table" id="68cf-765f-cad9-6812" hidden="false" sortIndex="2">
                       <selectionEntries>
                         <selectionEntry type="upgrade" import="true" name="[5] Angelic Instrument" hidden="false" id="4daa-b4a3-269f-7085">
                           <profiles>
@@ -941,6 +941,383 @@ Warband’s Arsenal. In any future Quartermaster Step, you can use the
 Salvaged Resurrection Machine to remove 1 Battle Scar from a model in
 your Warband. Remove the Salvaged Resurrection Machine from your
 Warband Roster after it is used.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Legendary Table" id="4eb5-4ebe-f3e6-c22b" hidden="false" sortIndex="3">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="[6] Battlefield of Corpses" hidden="false" id="d068-934d-b3e7-1c25">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1259-8450-80f2-6baf"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Battlefield of Corpses" id="4fcb-134a-80aa-db4e" hidden="false">
+                              <description>You come across a scene of terrible slaughter. The
+remains of humans from various nations and Hellish creatures, fallen in
+battles over the past 800 years, lie torn and scattered across the horizon,
+while the trenches that criss-cross this scene are filled with blood. Choose
+up to 2 pieces of Battlekit from your Warband’s Armoury Tables worth
+up to 100 👑 in total, and add them to your Arsenal.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[8] Esoteric Library" hidden="false" id="27c6-fa0c-ce8a-3da2">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5dc-97ca-a8a0-884f"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Esoteric Library" id="8356-0085-2091-b7f2" hidden="false">
+                              <description>You find a concealed collection of works on Goetic
+Magic, blood sacrifice rites, and grimoires on the summoning of demons.
+Choose one of the following options:&quot;
+
+
+* Burn (New Antioch, Trench Pilgrims, the Sultanate only): Your
+Warband gains 3+D3 ☼.
+* Release Plague (Black Grail only): A Black Grail Warband may unleash
+a Plague from the books. At the start of each game, after deployment,
+you can place 1 INFECTION MARKER next to 1 model of your
+choice (friend or foe).
+* Sell (Any Warband): Your Warband gains 6D6 x 10 👑.
+* Study (The Court or Heretic Legions only): At the start of each
+game, after deployment, you can pick 1 model (friend or foe).
+Place 1 BLOOD MARKER next to the model that you pick.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[10] Hidden Passages" hidden="false" id="00d3-ecb0-f0d9-a302">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a2b-878e-1d28-8e3d"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Hidden Passages" id="b8b2-8892-9eeb-5ab0" hidden="false">
+                              <description>You uncover a hidden entrance to a vast underground
+network, perhaps dug by the Heretics to infiltrate the Great Iron Wall,
+or by refugees living in No Man’s Land. This allows you to explore the
+area you are in far more efficiently. Your Warband gains the Duplicate
+Exploration Skill.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[12] Jabirean Alchemical Book" hidden="false" id="6357-e75a-b3aa-748d">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f882-1282-2a4b-43e8"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Jabirean Alchemical Book" id="937b-23b6-179f-b879" hidden="false">
+                              <description>You find one of the fabled books of the
+Jabirean Corpus, filled with the most wondrous secrets of the nature of
+the universe. Choose one of the following options:
+
+
+* Keep: From now on,in your Quartermaster Step, you can purchase
+Fire Shields from the House of Wisdom Armoury Tables &amp; Battlekit
+section (▶ see the House of Wisdom variant in Warbands of
+Trench Crusade)
+* Sell: Your Warband gains 150 👑 or 5 ☼ (you can choose which).
+* Study (House of Wisdom only): Alchemical Formulae now cost your
+Warband 5 👑 less than they used to, to a minimum Cost of 5 👑.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[14] Black Network Contact" hidden="false" id="4acf-5add-3d49-d3a1">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1bd2-a576-0e3f-b7f2"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Black Network Contact" id="6af8-2119-fe75-5d3c" hidden="false">
+                              <description>You make contact with one of the legendary
+Merchant Princes of the Black Network. From now on, in the
+Quartermaster Step, you can purchase Glory Items costing 12 ☼ or less.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[16] Treasure of the Holies" hidden="false" id="ba47-9de2-0c5c-89a7">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b01b-24e1-8d1f-43ff"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Treasure of the Holies" id="57a0-41e6-0373-8e64" hidden="false">
+                              <description>You find a legendary feretory, be it the Tabernacle
+of the Hebrews, an altar to the Morning Star himself, a shrine founded
+by Saint Peter or a place where the Prophet visited. On its altar lies a
+treasure chest containing an object of great power waiting for you. You
+score D3 Campaign Victory Points and can add one Glory Item to your
+Arsenal for free. If you prefer you can take the treasure chest with you and
+choosethe Glory Item in any future Quartermaster Step.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[18] Skull of a Saint" hidden="false" id="0187-d69d-f50c-f62d">
+                          <profiles>
+                            <profile name="Skull of a Saint" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="ed6f-2631-8371-6196">
+                              <characteristics>
+                                <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
+                                <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
+                                <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
+                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find the skull of a saint beheaded in ages past. The power of communion lingers in the holy remains.
+
+The skull screams ceaselessly as you mount it on a pole to mock God and paint it with blasphemous names. This item counts as a banner. It adds +2D to your Morale Tests and you automatically gain 1 Glory Point after each battle.</characteristic>
+                              </characteristics>
+                              <modifiers>
+                                <modifier type="set" value="You find the skull of a saint beheaded in ages past. The power of communion lingers in the holy remains.
+
+The saint guides your troops before each battle. The model with the skull gains the following skill: Unless the scenario prohibits use of the special deployment of INFILTRATORS, you may deploy the model on any table edge as long as it is at least 8” away from any enemy model after INFILTRATORS are deployed." field="4834-43a9-1c93-9062">
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditions>
+                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
+                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true"/>
+                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="72ab-daa4-80ee-e9a5" shared="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </modifier>
+                              </modifiers>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7746-eb21-987f-9b0d" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[20] Lock of Samson&apos;s Hair" hidden="false" id="4a0f-ce09-06d5-6188">
+                          <profiles>
+                            <profile name="Lock of Samson&apos;s Hair" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="2467-26a5-9194-b836">
+                              <characteristics>
+                                <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
+                                <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
+                                <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
+                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find a lock Samson’s hair, imbued with the unlimited strength of the strongest warrior that ever lived. This item is a piece of equipment with the following rules:
+- The model with this item gains the Keyword STRONG and +1 to all injury rolls in melee.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84df-de2d-32fc-612f" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[23] Patron’s Visit" hidden="false" id="fbcf-ddf9-2f61-aa4a">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c05b-45f1-e6d3-b25a"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Patron’s Visit" id="0fed-3a77-1e4d-eabc" hidden="false">
+                              <description>Your Patron or their representative makes a surprise visit to
+your Warband. If you wish, you can immediately exchange up to 10 ☼ for
+an equal number of Campaign Victory Points.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[26] Sample of Holy DNA" hidden="false" id="8ec8-4622-f11e-54e3">
+                          <profiles>
+                            <profile name="Sample of Holy DNA" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="99ac-554b-2514-7222">
+                              <characteristics>
+                                <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
+                                <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
+                                <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
+                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find a sample of holy DNA. You can treat any one model in your warband with it. When this model is activated, one INFECTION MARKER or BLOOD MARKER the model has becomes a BLESSING MARKER instead.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c922-f08f-6800-932d" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[30] Golgotha Tekites" hidden="false" id="9743-8c0a-a547-66e8">
+                          <profiles>
+                            <profile name="Golgotha Tekites" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="cdc1-800b-1e0a-0b5a">
+                              <characteristics>
+                                <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
+                                <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
+                                <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
+                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You can treat any armour with the Golgotha Tekites. The armour now ignores extra BLOOD MARKERS from the Keywords GAS, FIRE and SHRAPNEL.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f01a-150a-2dfa-c1d3" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[36] Fruit from the Tree of Knowledge of Good and Evil" hidden="false" id="0f43-4f24-b823-aee4">
+                          <profiles>
+                            <profile name="Fruit from the Tree of Knowledge of Good and Evil" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="ce81-a123-3d2f-ec8f">
+                              <characteristics>
+                                <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
+                                <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
+                                <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
+                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Amongst bones of giant humans unearthed by the chaos of war you find a golden-hued fruit wrapped in a spun cloth. Any model eating this fruit will immediately gain any skill of your choice (that is normally available to your warband/this model, including any Exploration Skill). In addition the model gains the Keyword DEMONIC.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c49f-9c80-eb45-e392" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                    <selectionEntryGroup name="Legendary Table" id="79ab-8795-e45e-2920" hidden="false" sortIndex="3">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="[6] Battlefield of Corpses" hidden="false" id="609c-6340-53d1-bbc6">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="245f-dc32-8789-4fd8"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Battlefield of Corpses" id="3694-9ac8-9e0c-1c95" hidden="false">
+                              <description>You come across a scene of terrible slaughter. The
+remains of humans from various nations and Hellish creatures, fallen in
+battles over the past 800 years, lie torn and scattered across the horizon,
+while the trenches that criss-cross this scene are filled with blood. Choose
+up to 2 pieces of Battlekit from your Warband’s Armoury Tables worth
+up to 100 👑 in total, and add them to your Arsenal.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[8] Esoteric Library" hidden="false" id="c880-8268-76dc-4068">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f23c-d161-4f82-8f2e"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Esoteric Library" id="4d7a-0acb-109e-9154" hidden="false">
+                              <description>You find a concealed collection of works on Goetic
+Magic, blood sacrifice rites, and grimoires on the summoning of demons.
+Choose one of the following options:&quot;
+
+
+* Burn (New Antioch, Trench Pilgrims, the Sultanate only): Your
+Warband gains 3+D3 ☼.
+* Release Plague (Black Grail only): A Black Grail Warband may unleash
+a Plague from the books. At the start of each game, after deployment,
+you can place 1 INFECTION MARKER next to 1 model of your
+choice (friend or foe).
+* Sell (Any Warband): Your Warband gains 6D6 x 10 👑.
+* Study (The Court or Heretic Legions only): At the start of each
+game, after deployment, you can pick 1 model (friend or foe).
+Place 1 BLOOD MARKER next to the model that you pick.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[10] Hidden Passages" hidden="false" id="42f6-0558-3e67-09a8">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0488-f45c-089d-d530"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Hidden Passages" id="054c-06db-671d-6dcf" hidden="false">
+                              <description>You uncover a hidden entrance to a vast underground
+network, perhaps dug by the Heretics to infiltrate the Great Iron Wall,
+or by refugees living in No Man’s Land. This allows you to explore the
+area you are in far more efficiently. Your Warband gains the Duplicate
+Exploration Skill.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[12] Jabirean Alchemical Book" hidden="false" id="2a97-b36d-6869-63dc">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1199-9655-7e78-a9c5"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Jabirean Alchemical Book" id="1955-4eb1-5345-1d83" hidden="false">
+                              <description>You find one of the fabled books of the
+Jabirean Corpus, filled with the most wondrous secrets of the nature of
+the universe. Choose one of the following options:
+
+
+* Keep: From now on,in your Quartermaster Step, you can purchase
+Fire Shields from the House of Wisdom Armoury Tables &amp; Battlekit
+section (▶ see the House of Wisdom variant in Warbands of
+Trench Crusade)
+* Sell: Your Warband gains 150 👑 or 5 ☼ (you can choose which).
+* Study (House of Wisdom only): Alchemical Formulae now cost your
+Warband 5 👑 less than they used to, to a minimum Cost of 5 👑.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[14] Black Network Contact" hidden="false" id="f58c-b5d4-1a8b-4e1e">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5936-576f-3ba3-aac9"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Black Network Contact" id="410c-4ab0-564b-0e29" hidden="false">
+                              <description>You make contact with one of the legendary
+Merchant Princes of the Black Network. From now on, in the
+Quartermaster Step, you can purchase Glory Items costing 12 ☼ or less.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[16] Treasure of the Holies" hidden="false" id="d875-77d2-940a-7ecd">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbb7-0049-a676-fffe"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Treasure of the Holies" id="0603-f412-ba8c-88cc" hidden="false">
+                              <description>You find a legendary feretory, be it the Tabernacle
+of the Hebrews, an altar to the Morning Star himself, a shrine founded
+by Saint Peter or a place where the Prophet visited. On its altar lies a
+treasure chest containing an object of great power waiting for you. You
+score D3 Campaign Victory Points and can add one Glory Item to your
+Arsenal for free. If you prefer you can take the treasure chest with you and
+choosethe Glory Item in any future Quartermaster Step.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[18] Skull of a Saint" hidden="false" id="27c4-142b-5eef-5e76">
+                          <profiles>
+                            <profile name="Skull of a Saint" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="52eb-f342-40eb-f083">
+                              <characteristics>
+                                <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
+                                <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
+                                <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
+                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find the skull of a saint beheaded in ages past. The power of communion lingers in the holy remains.
+
+The skull screams ceaselessly as you mount it on a pole to mock God and paint it with blasphemous names. This item counts as a banner. It adds +2D to your Morale Tests and you automatically gain 1 Glory Point after each battle.</characteristic>
+                              </characteristics>
+                              <modifiers>
+                                <modifier type="set" value="You find the skull of a saint beheaded in ages past. The power of communion lingers in the holy remains.
+
+The saint guides your troops before each battle. The model with the skull gains the following skill: Unless the scenario prohibits use of the special deployment of INFILTRATORS, you may deploy the model on any table edge as long as it is at least 8” away from any enemy model after INFILTRATORS are deployed." field="4834-43a9-1c93-9062">
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditions>
+                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
+                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true"/>
+                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="72ab-daa4-80ee-e9a5" shared="true"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </modifier>
+                              </modifiers>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="386d-210e-6bcf-309f" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[20] Lock of Samson&apos;s Hair" hidden="false" id="b71f-ea99-5583-f1cb">
+                          <profiles>
+                            <profile name="Lock of Samson&apos;s Hair" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="15b7-f9f9-e357-41c3">
+                              <characteristics>
+                                <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
+                                <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
+                                <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
+                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find a lock Samson’s hair, imbued with the unlimited strength of the strongest warrior that ever lived. This item is a piece of equipment with the following rules:
+- The model with this item gains the Keyword STRONG and +1 to all injury rolls in melee.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eaa-54a5-111f-34cb" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[23] Patron’s Visit" hidden="false" id="4bcb-d5b6-e865-8c71">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfb0-e143-c84d-17db"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Patron’s Visit" id="dfc3-8935-ecf9-5079" hidden="false">
+                              <description>Your Patron or their representative makes a surprise visit to
+your Warband. If you wish, you can immediately exchange up to 10 ☼ for
+an equal number of Campaign Victory Points.</description>
                             </rule>
                           </rules>
                         </selectionEntry>
