@@ -280,94 +280,6 @@
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aed1-42cf-498e-b088" includeChildSelections="false"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Angelic Instrument" hidden="false" id="b621-24b3-db53-b09a">
-                      <profiles>
-                        <profile name="Angelic Instrument" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="cb67-a68f-76f3-0ee2">
-                          <characteristics>
-                            <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                            <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                            <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find an otherworldly instrument on the battlefield besides the wracked body of a lesser angel – fallen or divine. Add an Angelic Instrument to your warband’s roster for free. It’s identical to a Musical Instrument (including their equipment restrictions and LIMIT), except its effect has a range of 8” instead of 4”. If your warband is at its LIMIT for Musical Instruments, it can immediately replace an existing Musical Instrument with the Angelic Instrument.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6073-e652-8a8a-b09c" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Ransacked Alchemist Workshop" hidden="false" id="3934-a297-9e35-799f">
-                      <profiles>
-                        <profile name="Ransacked Alchemist Workshop" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="ecc1-b5e5-76a1-743c">
-                          <characteristics>
-                            <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                            <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                            <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You gather some of the life-giving liquids. Add Curative Fluids to your warband’s roster for free. During any Reallocate Equipment phase for the rest of the campaign, your warband can use these fluids to remove one Battle Scar from any model in your warband. Once these fluids are used, they are spent and cannot be used again.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9da4-a9ca-bd1f-7578" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Book of Golems" hidden="false" id="f73c-0f08-e6c3-e9fd">
-                      <profiles>
-                        <profile name="Book of Golems" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="6a40-1041-7604-c8ab">
-                          <characteristics>
-                            <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                            <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                            <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find a Rabbinic manual on creating golems. Studying it, you can create one golem. Use the House of Wisdom Takwin creature creation to make a Homunculus of up to 100 ducats of value (40 ducats base cost) and add it to your warband’s roster for free. You can buy items from your armoury for your golem. Otherwise it uses exactly the same rules as Takwin Homunculi. This golem can never be promoted to ELITE or gain experience. Unlike a Takwin creature, the golem does not need to be associated with an alchemist and it does not count as a Takwin creature for any purposes (such as LIMIT). Replace any instance of Iron Sultanate with your faction.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c4e-568c-5495-1503" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Stash of Drugs &amp; Erotica " hidden="false" id="0582-f69c-058a-15a0">
-                      <profiles>
-                        <profile name="Stash of Drugs &amp; Erotica " typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="9ff0-17f0-d0b8-919a">
-                          <characteristics>
-                            <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                            <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                            <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">From now on, your warband rolls Morale checks with +1 DICE.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="760a-01e1-c235-94df" includeChildSelections="false"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="set" value="true" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="72ab-daa4-80ee-e9a5" shared="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
-                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Saints Reliquary" hidden="false" id="894c-76bf-39f5-8308">
-                      <profiles>
-                        <profile name="Saints Reliquary" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="52a0-ea69-5495-1074">
-                          <characteristics>
-                            <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                            <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                            <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find the well-hidden reliquary of a Fallen Saint. Add a Saintly Relic to your warband’s roster for free. This piece of equipment can only be carried by an ELITE model. A model equipped with the Saintly Relic gains the Keyword TOUGH but loses the Keyword INFILTRATOR (should it have it) and can never have cover.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dad7-39d1-6152-0b97" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Esoteric Library: Study" hidden="false" id="7bc6-edcb-2ee1-4f6f">
                       <profiles>
                         <profile name="Esoteric Library: Study" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="411a-7df7-019a-387f">
@@ -397,150 +309,6 @@
                                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="72ab-daa4-80ee-e9a5" shared="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
                                 <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true"/>
-                              </conditions>
-                            </conditionGroup>
-                          </conditionGroups>
-                        </modifier>
-                      </modifiers>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Jabirean Alchemical Book" hidden="false" id="374c-9b11-8530-d0af">
-                      <profiles>
-                        <profile name="Jabirean Alchemical Book" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="a9fe-808e-bbe3-9d69">
-                          <characteristics>
-                            <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                            <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                            <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">If not House of Wisdom: Your warband now buy a Fire Shield exactly as if it was a House of Wisdom warband.
-
-
-If House of Wisdom: You glean great secrets of Takwin creation and all the Alchemical Formulae now cost 5 ducats less (down to minimum of 5).</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2332-1a2c-25a9-70a2" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Skull of a Saint" hidden="false" id="b48d-4fe2-c3e6-1ec5">
-                      <profiles>
-                        <profile name="Skull of a Saint" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="efa1-13ba-e5ff-b1ae">
-                          <characteristics>
-                            <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                            <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                            <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find the skull of a saint beheaded in ages past. The power of communion lingers in the holy remains.
-
-The skull screams ceaselessly as you mount it on a pole to mock God and paint it with blasphemous names. This item counts as a banner. It adds +2D to your Morale Tests and you automatically gain 1 Glory Point after each battle.</characteristic>
-                          </characteristics>
-                          <modifiers>
-                            <modifier type="set" value="You find the skull of a saint beheaded in ages past. The power of communion lingers in the holy remains.
-
-The saint guides your troops before each battle. The model with the skull gains the following skill: Unless the scenario prohibits use of the special deployment of INFILTRATORS, you may deploy the model on any table edge as long as it is at least 8” away from any enemy model after INFILTRATORS are deployed." field="4834-43a9-1c93-9062">
-                              <conditionGroups>
-                                <conditionGroup type="or">
-                                  <conditions>
-                                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
-                                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true"/>
-                                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="72ab-daa4-80ee-e9a5" shared="true"/>
-                                  </conditions>
-                                </conditionGroup>
-                              </conditionGroups>
-                            </modifier>
-                          </modifiers>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5803-1d8d-1c26-c685" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Lock of Samson&apos;s Hair" hidden="false" id="f1a4-5dd7-1649-cfac">
-                      <profiles>
-                        <profile name="Lock of Samson&apos;s Hair" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="688b-042c-ca5c-7980">
-                          <characteristics>
-                            <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                            <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                            <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find a lock Samson’s hair, imbued with the unlimited strength of the strongest warrior that ever lived. This item is a piece of equipment with the following rules:
-- The model with this item gains the Keyword STRONG and +1 to all injury rolls in melee.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3d8a-1f11-59c9-f5f5" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Sample of Holy DNA" hidden="false" id="cf64-006b-382f-db29">
-                      <profiles>
-                        <profile name="Sample of Holy DNA" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="86cc-02bb-2975-a7e9">
-                          <characteristics>
-                            <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                            <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                            <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find a sample of holy DNA. You can treat any one model in your warband with it. When this model is activated, one INFECTION MARKER or BLOOD MARKER the model has becomes a BLESSING MARKER instead.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe62-54f1-3e0c-8587" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Golgotha Tekites" hidden="false" id="1b64-db02-1b41-f989">
-                      <profiles>
-                        <profile name="Golgotha Tekites" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="7dd2-fe4e-86ee-06a2">
-                          <characteristics>
-                            <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                            <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                            <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You can treat any armour with the Golgotha Tekites. The armour now ignores extra BLOOD MARKERS from the Keywords GAS, FIRE and SHRAPNEL.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bc7-e3ef-669e-1458" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Fruit from the Tree of Knowledge of Good and Evil" hidden="false" id="71ac-1858-f313-c965">
-                      <profiles>
-                        <profile name="Fruit from the Tree of Knowledge of Good and Evil" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="3ae7-1120-4b97-b549">
-                          <characteristics>
-                            <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                            <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                            <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Amongst bones of giant humans unearthed by the chaos of war you find a golden-hued fruit wrapped in a spun cloth. Any model eating this fruit will immediately gain any skill of your choice (that is normally available to your warband/this model, including any Exploration Skill). In addition the model gains the Keyword DEMONIC.</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e6e-94c3-526e-5c57" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Sniper Nest: Scope" hidden="true" id="2986-1070-2fb0-de35">
-                      <profiles>
-                        <profile name="Found a Sniper Scope" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="8c06-3e5e-14ee-2494">
-                          <characteristics>
-                            <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                            <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                            <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You have found a single Sniper Scope for use.</characteristic>
-                          </characteristics>
-                          <modifiers>
-                            <modifier type="set" value="At the start of each battle, select any one model (friend or foe). That model starts the battle with +1 INFECTION MARKER." field="4834-43a9-1c93-9062">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0b26-15c1-cebd-0077" shared="true"/>
-                              </conditions>
-                            </modifier>
-                          </modifiers>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="645d-be48-328f-dd88" includeChildSelections="false"/>
-                      </constraints>
-                      <modifiers>
-                        <modifier type="set" value="false" field="hidden">
-                          <conditionGroups>
-                            <conditionGroup type="or">
-                              <conditions>
-                                <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
                               </conditions>
                             </conditionGroup>
                           </conditionGroups>
@@ -725,6 +493,128 @@ Cloak of Alamut.
 * The Court: Ophidian Rifle.</description>
                             </rule>
                           </rules>
+                          <selectionEntries>
+                            <selectionEntry type="upgrade" import="true" name="Sniper Nest: Scope" hidden="true" id="2986-1070-2fb0-de35">
+                              <profiles>
+                                <profile name="Found a Sniper Scope" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="8c06-3e5e-14ee-2494">
+                                  <characteristics>
+                                    <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
+                                    <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
+                                    <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
+                                    <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You have found a single Sniper Scope for use.</characteristic>
+                                  </characteristics>
+                                  <modifiers>
+                                    <modifier type="set" value="At the start of each battle, select any one model (friend or foe). That model starts the battle with +1 INFECTION MARKER." field="4834-43a9-1c93-9062">
+                                      <conditions>
+                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0b26-15c1-cebd-0077" shared="true"/>
+                                      </conditions>
+                                    </modifier>
+                                  </modifiers>
+                                </profile>
+                              </profiles>
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="645d-be48-328f-dd88" includeChildSelections="false"/>
+                              </constraints>
+                              <modifiers>
+                                <modifier type="set" value="false" field="hidden">
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditions>
+                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
+                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true" childName="New Antioch"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </modifier>
+                              </modifiers>
+                            </selectionEntry>
+                            <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="true" id="8422-711c-00c8-1c8c">
+                              <infoLinks>
+                                <infoLink name="Sniper Rifle" id="39f8-6c15-e264-0471" hidden="false" type="profile" targetId="6eb2-c600-98e7-16d3"/>
+                              </infoLinks>
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4890-e5a9-8abc-66b5" includeChildSelections="false"/>
+                              </constraints>
+                              <modifiers>
+                                <modifier type="set" value="false" field="hidden">
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditions>
+                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
+                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true" childName="New Antioch"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </modifier>
+                                <modifier type="set" value="false" field="hidden">
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditions>
+                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
+                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true" childName="New Antioch"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </modifier>
+                              </modifiers>
+                            </selectionEntry>
+                            <selectionEntry type="upgrade" import="true" name="Siege Jezzail, Alchemical Ammunition, and a Cloak of Alamut." hidden="true" id="0b16-82c4-fcdf-b8d1">
+                              <infoLinks>
+                                <infoLink name="Alchemical Ammunition" id="7272-b3a7-5102-f383" hidden="false" type="profile" targetId="c296-2021-0947-c6c7"/>
+                                <infoLink name="Cloak of Alamut" id="fa94-aad0-e8fb-4075" hidden="false" type="profile" targetId="fc84-ca32-2672-c684"/>
+                                <infoLink name="Siege Jezzail" id="4088-730b-3d1d-b91b" hidden="false" type="profile" targetId="59d6-227d-0859-a162"/>
+                              </infoLinks>
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72c7-5c8f-4580-9bff" includeChildSelections="false"/>
+                              </constraints>
+                              <modifiers>
+                                <modifier type="set" value="false" field="hidden">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="fd8d-e9e0-2540-a257" shared="true" childName="Sultanate"/>
+                                  </conditions>
+                                </modifier>
+                              </modifiers>
+                            </selectionEntry>
+                          </selectionEntries>
+                          <selectionEntryGroups>
+                            <selectionEntryGroup name="Black Grail" id="ebf4-62a9-0dc4-f814" hidden="true" sortIndex="4">
+                              <infoLinks>
+                                <infoLink name="Corruption Belcher" id="35f0-8df3-4620-baaa" hidden="false" type="profile" targetId="801f-50a4-1ea2-7b92"/>
+                                <infoLink name="Field Shrine" id="4c78-f74e-1400-81de" hidden="false" type="profile" targetId="76e2-0e5b-972a-0f69"/>
+                              </infoLinks>
+                              <modifiers>
+                                <modifier type="set" value="false" field="hidden">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="c5a0-e794-7661-ebb7" shared="true" childName="Black Grail"/>
+                                  </conditions>
+                                </modifier>
+                              </modifiers>
+                            </selectionEntryGroup>
+                            <selectionEntryGroup name="The Court" id="80eb-9523-0749-a6ce" hidden="true" sortIndex="5">
+                              <infoLinks>
+                                <infoLink name="Ophidian Rifle" id="6095-310c-4dc9-8068" hidden="false" type="profile" targetId="d8fe-561c-9243-f9b8"/>
+                              </infoLinks>
+                              <modifiers>
+                                <modifier type="set" value="false" field="hidden">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="50ae-a540-4d66-0d43" shared="true" childName="The Court"/>
+                                  </conditions>
+                                </modifier>
+                              </modifiers>
+                            </selectionEntryGroup>
+                            <selectionEntryGroup name="Heretic Legion" id="4210-d273-eac9-ef6d" hidden="true">
+                              <infoLinks>
+                                <infoLink name="Automatic Rifle" id="631b-9d1d-da5a-87c8" hidden="false" type="profile" targetId="c35c-a506-683d-6c3f"/>
+                              </infoLinks>
+                              <modifiers>
+                                <modifier type="set" value="false" field="hidden">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="7ba1-f516-e8cf-3957" shared="true" childName="Heretic"/>
+                                  </conditions>
+                                </modifier>
+                              </modifiers>
+                            </selectionEntryGroup>
+                          </selectionEntryGroups>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="[18] Fallen Knight" hidden="false" id="63f9-71a8-ddcd-6cf7">
                           <constraints>
@@ -808,21 +698,6 @@ Exploration Step (including this one).</description>
                             </rule>
                           </rules>
                         </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="[12] Ransacked Alchemist Workshop" hidden="false" id="2503-74f8-202d-0cd7">
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13fe-8fc2-031f-c199" includeChildSelections="false"/>
-                          </constraints>
-                          <rules>
-                            <rule name="Ransacked Alchemist Workshop" id="4eeb-20fd-a1e3-d62b" hidden="false">
-                              <description>Amidst the rubble, you find a few
-intact life-giving potions. Add Curative Fluids to your Warband’s Arsenal.
-Once, in any future Quartermaster Step, you can use the Curative Fluids
-to remove 1 Battle Scar (but not the effects of any Trauma) from a model
-in your Warband. Remove the Curative Fluids from your Warband Roster
-after they are used</description>
-                            </rule>
-                          </rules>
-                        </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="[15] Black Market" hidden="false" id="3d06-0b52-2e3b-bb89">
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c8eb-ae55-3251-347a" includeChildSelections="false"/>
@@ -832,45 +707,6 @@ after they are used</description>
                               <description>You discover a major underground trading post in No
 Man’s Land. From now on, in the Quartermaster Step, you can purchase
 Glory Items costing 8 ☼ or less.</description>
-                            </rule>
-                          </rules>
-                        </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="[17] Book of Golems" hidden="false" id="e875-7673-efb7-ca33">
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="85cf-46ab-b296-e5a7" includeChildSelections="false"/>
-                          </constraints>
-                          <rules>
-                            <rule name="Book of Golems" id="0733-917b-50d0-d6f7" hidden="false">
-                              <description>You find a Rabbinic manual on creating Golems.
-Studying it allows you to create a Golem. Add Takwin Homunculus from
-The House of Wisdom Variant Warband in the Iron Sultanate Faction
-List to your Warband. It has the Human Hands Alchemical Formula,
-plus Alchemical Formulas worth a total of up to 50 👑 for free (you do 
-not have to pay for the Formulas that you choose). The Golem has the
-GOLEM Keyword, and replaces the SULTANATE Keyword with your
-Faction&apos;s Keyword. You can purchase Battlekit for it in the Quartermaster
-Step, using your own Armoury Tables instead of the ones in the Iron
-Sultanate Faction List. The model is treated as an Ally that can never be
-Promoted or receive additional Alchemical Formulas.</description>
-                            </rule>
-                          </rules>
-                        </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="[21] Stash of Drugs &amp; Erotica" hidden="false" id="80a0-f6b6-1f35-ad9a">
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="def7-d2c5-bf40-3fbc" includeChildSelections="false"/>
-                          </constraints>
-                          <rules>
-                            <rule name="Stash of Drugs &amp; Erotica" id="6618-59ac-dc01-c78d" hidden="false">
-                              <description>You find a motherlode of forbidden objects
-and chemicals, highly sought after and in demand. Choose one of the
-following options:
-
-
-* Indulge: Add +1 DICE to Morale Checks for your Warband for the
-rest of the campaign.
-* Sell: Your Warband gains 120 👑.
-* Confiscate: Your Warband gains +4 ☼. Trench Pilgrims must select the
-Confiscate option.</description>
                             </rule>
                           </rules>
                         </selectionEntry>
@@ -887,22 +723,6 @@ power waiting for you. Choose one of the following options:
 * Report: Your Warband gains +D4 ☼.
 * Keep: Choose one Glory Item worth up to 10 ☼, and add it
 to your Arsenal.</description>
-                            </rule>
-                          </rules>
-                        </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="[23] Saint’s Reliquary" hidden="false" id="4bc2-16d4-311a-4a0c">
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5705-9a32-ead8-35c6" includeChildSelections="false"/>
-                          </constraints>
-                          <rules>
-                            <rule name="Saint’s Reliquary" id="6e9e-6394-c85e-eea0" hidden="false">
-                              <description>You discover the well-hidden reliquary of a fallen
-saint. Add a Saintly Relic to your Warband’s Arsenal. It is a piece of
-Equipment that can be given to any model that has the ELITE Keyword.
-A model that has a Saintly Relic gains the TOUGH Keyword, but loses
-the INFILTRATOR Keyword if it has it, and the opposing player can
-ignore the Cover and Defended Obstacle modifiers for attacks that
-target the model.</description>
                             </rule>
                           </rules>
                         </selectionEntry>
@@ -943,6 +763,119 @@ your Warband. Remove the Salvaged Resurrection Machine from your
 Warband Roster after it is used.</description>
                             </rule>
                           </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[17] Book of Golems" hidden="false" id="f73c-0f08-e6c3-e9fd">
+                          <profiles>
+                            <profile name="Book of Golems" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="6a40-1041-7604-c8ab">
+                              <characteristics>
+                                <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
+                                <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
+                                <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
+                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find a Rabbinic manual on creating golems. Studying it, you can create one golem. Use the House of Wisdom Takwin creature creation to make a Homunculus of up to 100 ducats of value (40 ducats base cost) and add it to your warband’s roster for free. You can buy items from your armoury for your golem. Otherwise it uses exactly the same rules as Takwin Homunculi. This golem can never be promoted to ELITE or gain experience. Unlike a Takwin creature, the golem does not need to be associated with an alchemist and it does not count as a Takwin creature for any purposes (such as LIMIT). Replace any instance of Iron Sultanate with your faction.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c4e-568c-5495-1503" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[12] Ransacked Alchemist Workshop" hidden="false" id="3934-a297-9e35-799f">
+                          <profiles>
+                            <profile name="Ransacked Alchemist Workshop" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="ecc1-b5e5-76a1-743c">
+                              <characteristics>
+                                <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
+                                <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
+                                <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
+                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You gather some of the life-giving liquids. Add Curative Fluids to your warband’s roster for free. During any Reallocate Equipment phase for the rest of the campaign, your warband can use these fluids to remove one Battle Scar from any model in your warband. Once these fluids are used, they are spent and cannot be used again.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9da4-a9ca-bd1f-7578" includeChildSelections="false"/>
+                          </constraints>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[23] Saints Reliquary" hidden="false" id="894c-76bf-39f5-8308">
+                          <profiles>
+                            <profile name="Saints Reliquary" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="52a0-ea69-5495-1074">
+                              <characteristics>
+                                <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
+                                <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
+                                <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
+                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find the well-hidden reliquary of a Fallen Saint. Add a Saintly Relic to your warband’s roster for free. This piece of equipment can only be carried by an ELITE model. A model equipped with the Saintly Relic gains the Keyword TOUGH but loses the Keyword INFILTRATOR (should it have it) and can never have cover.</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dad7-39d1-6152-0b97" includeChildSelections="false"/>
+                          </constraints>
+                          <rules>
+                            <rule name="Saint’s Reliquary" id="6e9e-6394-c85e-eea0" hidden="false">
+                              <description>You discover the well-hidden reliquary of a fallen
+saint. Add a Saintly Relic to your Warband’s Arsenal. It is a piece of
+Equipment that can be given to any model that has the ELITE Keyword.
+A model that has a Saintly Relic gains the TOUGH Keyword, but loses
+the INFILTRATOR Keyword if it has it, and the opposing player can
+ignore the Cover and Defended Obstacle modifiers for attacks that
+target the model.</description>
+                            </rule>
+                          </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[21] Stash of Drugs &amp; Erotica " hidden="false" id="0582-f69c-058a-15a0">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="760a-01e1-c235-94df" includeChildSelections="false"/>
+                          </constraints>
+                          <modifiers>
+                            <modifier type="set" value="true" field="hidden">
+                              <conditionGroups>
+                                <conditionGroup type="or">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="72ab-daa4-80ee-e9a5" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true"/>
+                                  </conditions>
+                                </conditionGroup>
+                              </conditionGroups>
+                            </modifier>
+                          </modifiers>
+                          <rules>
+                            <rule name="Stash of Drugs &amp; Erotica" id="6618-59ac-dc01-c78d" hidden="false">
+                              <description>You find a motherlode of forbidden objects
+and chemicals, highly sought after and in demand. 
+Choose one of the following options:
+
+Trench Pilgrims must select the Confiscate option.
+
+
+* Indulge: Add +1 DICE to Morale Checks for your Warband for the
+rest of the campaign.
+* Sell: Your Warband gains 120 👑.
+* Confiscate: Your Warband gains +4 ☼. </description>
+                            </rule>
+                          </rules>
+                          <selectionEntries>
+                            <selectionEntry type="upgrade" import="true" name="Indulge" hidden="false" id="e12e-1921-e376-695d">
+                              <rules>
+                                <rule name="Indulge" id="f443-cc74-21eb-051d" hidden="false">
+                                  <description>Add +1 DICE to Morale Checks for your Warband for the
+rest of the campaign.</description>
+                                </rule>
+                              </rules>
+                              <profiles>
+                                <profile name="Indulge" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="6237-ebbe-aa0c-b39d">
+                                  <characteristics>
+                                    <characteristic name="Type" typeId="3f15-74a1-4d35-3642"/>
+                                    <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+                                    <characteristic name="Keywords" typeId="5093-5528-b08f-1496"/>
+                                    <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Add +1 DICE to Morale Checks for your Warband for the
+rest of the campaign.</characteristic>
+                                  </characteristics>
+                                </profile>
+                              </profiles>
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="880f-1883-69b0-5655" includeChildSelections="false"/>
+                              </constraints>
+                            </selectionEntry>
+                          </selectionEntries>
                         </selectionEntry>
                       </selectionEntries>
                     </selectionEntryGroup>
@@ -998,27 +931,6 @@ network, perhaps dug by the Heretics to infiltrate the Great Iron Wall,
 or by refugees living in No Man’s Land. This allows you to explore the
 area you are in far more efficiently. Your Warband gains the Duplicate
 Exploration Skill.</description>
-                            </rule>
-                          </rules>
-                        </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="[12] Jabirean Alchemical Book" hidden="false" id="6357-e75a-b3aa-748d">
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f882-1282-2a4b-43e8"/>
-                          </constraints>
-                          <rules>
-                            <rule name="Jabirean Alchemical Book" id="937b-23b6-179f-b879" hidden="false">
-                              <description>You find one of the fabled books of the
-Jabirean Corpus, filled with the most wondrous secrets of the nature of
-the universe. Choose one of the following options:
-
-
-* Keep: From now on,in your Quartermaster Step, you can purchase
-Fire Shields from the House of Wisdom Armoury Tables &amp; Battlekit
-section (▶ see the House of Wisdom variant in Warbands of
-Trench Crusade)
-* Sell: Your Warband gains 150 👑 or 5 ☼ (you can choose which).
-* Study (House of Wisdom only): Alchemical Formulae now cost your
-Warband 5 👑 less than they used to, to a minimum Cost of 5 👑.</description>
                             </rule>
                           </rules>
                         </selectionEntry>
@@ -1155,72 +1067,19 @@ an equal number of Campaign Victory Points.</description>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c49f-9c80-eb45-e392" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
-                      </selectionEntries>
-                    </selectionEntryGroup>
-                    <selectionEntryGroup name="Legendary Table" id="79ab-8795-e45e-2920" hidden="false" sortIndex="3">
-                      <selectionEntries>
-                        <selectionEntry type="upgrade" import="true" name="[6] Battlefield of Corpses" hidden="false" id="609c-6340-53d1-bbc6">
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="245f-dc32-8789-4fd8"/>
-                          </constraints>
-                          <rules>
-                            <rule name="Battlefield of Corpses" id="3694-9ac8-9e0c-1c95" hidden="false">
-                              <description>You come across a scene of terrible slaughter. The
-remains of humans from various nations and Hellish creatures, fallen in
-battles over the past 800 years, lie torn and scattered across the horizon,
-while the trenches that criss-cross this scene are filled with blood. Choose
-up to 2 pieces of Battlekit from your Warband’s Armoury Tables worth
-up to 100 👑 in total, and add them to your Arsenal.</description>
-                            </rule>
-                          </rules>
-                        </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="[8] Esoteric Library" hidden="false" id="c880-8268-76dc-4068">
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f23c-d161-4f82-8f2e"/>
-                          </constraints>
-                          <rules>
-                            <rule name="Esoteric Library" id="4d7a-0acb-109e-9154" hidden="false">
-                              <description>You find a concealed collection of works on Goetic
-Magic, blood sacrifice rites, and grimoires on the summoning of demons.
-Choose one of the following options:&quot;
+                        <selectionEntry type="upgrade" import="true" name="[12] Jabirean Alchemical Book" hidden="false" id="374c-9b11-8530-d0af">
+                          <profiles>
+                            <profile name="Jabirean Alchemical Book" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="a9fe-808e-bbe3-9d69">
+                              <characteristics>
+                                <characteristic name="Type" typeId="3f15-74a1-4d35-3642"/>
+                                <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+                                <characteristic name="Keywords" typeId="5093-5528-b08f-1496"/>
+                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find one of the fabled books of the
 
-
-* Burn (New Antioch, Trench Pilgrims, the Sultanate only): Your
-Warband gains 3+D3 ☼.
-* Release Plague (Black Grail only): A Black Grail Warband may unleash
-a Plague from the books. At the start of each game, after deployment,
-you can place 1 INFECTION MARKER next to 1 model of your
-choice (friend or foe).
-* Sell (Any Warband): Your Warband gains 6D6 x 10 👑.
-* Study (The Court or Heretic Legions only): At the start of each
-game, after deployment, you can pick 1 model (friend or foe).
-Place 1 BLOOD MARKER next to the model that you pick.</description>
-                            </rule>
-                          </rules>
-                        </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="[10] Hidden Passages" hidden="false" id="42f6-0558-3e67-09a8">
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0488-f45c-089d-d530"/>
-                          </constraints>
-                          <rules>
-                            <rule name="Hidden Passages" id="054c-06db-671d-6dcf" hidden="false">
-                              <description>You uncover a hidden entrance to a vast underground
-network, perhaps dug by the Heretics to infiltrate the Great Iron Wall,
-or by refugees living in No Man’s Land. This allows you to explore the
-area you are in far more efficiently. Your Warband gains the Duplicate
-Exploration Skill.</description>
-                            </rule>
-                          </rules>
-                        </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="[12] Jabirean Alchemical Book" hidden="false" id="2a97-b36d-6869-63dc">
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1199-9655-7e78-a9c5"/>
-                          </constraints>
-                          <rules>
-                            <rule name="Jabirean Alchemical Book" id="1955-4eb1-5345-1d83" hidden="false">
-                              <description>You find one of the fabled books of the
 Jabirean Corpus, filled with the most wondrous secrets of the nature of
 the universe. Choose one of the following options:
+
+
 
 
 * Keep: From now on,in your Quartermaster Step, you can purchase
@@ -1229,97 +1088,22 @@ section (▶ see the House of Wisdom variant in Warbands of
 Trench Crusade)
 * Sell: Your Warband gains 150 👑 or 5 ☼ (you can choose which).
 * Study (House of Wisdom only): Alchemical Formulae now cost your
-Warband 5 👑 less than they used to, to a minimum Cost of 5 👑.</description>
-                            </rule>
-                          </rules>
-                        </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="[14] Black Network Contact" hidden="false" id="f58c-b5d4-1a8b-4e1e">
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5936-576f-3ba3-aac9"/>
-                          </constraints>
-                          <rules>
-                            <rule name="Black Network Contact" id="410c-4ab0-564b-0e29" hidden="false">
-                              <description>You make contact with one of the legendary
-Merchant Princes of the Black Network. From now on, in the
-Quartermaster Step, you can purchase Glory Items costing 12 ☼ or less.</description>
-                            </rule>
-                          </rules>
-                        </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="[16] Treasure of the Holies" hidden="false" id="d875-77d2-940a-7ecd">
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbb7-0049-a676-fffe"/>
-                          </constraints>
-                          <rules>
-                            <rule name="Treasure of the Holies" id="0603-f412-ba8c-88cc" hidden="false">
-                              <description>You find a legendary feretory, be it the Tabernacle
-of the Hebrews, an altar to the Morning Star himself, a shrine founded
-by Saint Peter or a place where the Prophet visited. On its altar lies a
-treasure chest containing an object of great power waiting for you. You
-score D3 Campaign Victory Points and can add one Glory Item to your
-Arsenal for free. If you prefer you can take the treasure chest with you and
-choosethe Glory Item in any future Quartermaster Step.</description>
-                            </rule>
-                          </rules>
-                        </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="[18] Skull of a Saint" hidden="false" id="27c4-142b-5eef-5e76">
-                          <profiles>
-                            <profile name="Skull of a Saint" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="52eb-f342-40eb-f083">
-                              <characteristics>
-                                <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                                <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                                <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find the skull of a saint beheaded in ages past. The power of communion lingers in the holy remains.
+Warband 5 👑 less than they used to, to a minimum Cost of 5 👑.
 
-The skull screams ceaselessly as you mount it on a pole to mock God and paint it with blasphemous names. This item counts as a banner. It adds +2D to your Morale Tests and you automatically gain 1 Glory Point after each battle.</characteristic>
-                              </characteristics>
-                              <modifiers>
-                                <modifier type="set" value="You find the skull of a saint beheaded in ages past. The power of communion lingers in the holy remains.
 
-The saint guides your troops before each battle. The model with the skull gains the following skill: Unless the scenario prohibits use of the special deployment of INFILTRATORS, you may deploy the model on any table edge as long as it is at least 8” away from any enemy model after INFILTRATORS are deployed." field="4834-43a9-1c93-9062">
-                                  <conditionGroups>
-                                    <conditionGroup type="or">
-                                      <conditions>
-                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
-                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true"/>
-                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="72ab-daa4-80ee-e9a5" shared="true"/>
-                                      </conditions>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </modifier>
-                              </modifiers>
-                            </profile>
-                          </profiles>
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="386d-210e-6bcf-309f" includeChildSelections="false"/>
-                          </constraints>
-                        </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="[20] Lock of Samson&apos;s Hair" hidden="false" id="b71f-ea99-5583-f1cb">
-                          <profiles>
-                            <profile name="Lock of Samson&apos;s Hair" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="15b7-f9f9-e357-41c3">
-                              <characteristics>
-                                <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                                <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                                <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You find a lock Samson’s hair, imbued with the unlimited strength of the strongest warrior that ever lived. This item is a piece of equipment with the following rules:
-- The model with this item gains the Keyword STRONG and +1 to all injury rolls in melee.</characteristic>
+TLDR
+If not House of Wisdom: Your warband now buy a Fire Shield exactly as if it was a House of Wisdom warband.
+
+
+
+
+If House of Wisdom: You glean great secrets of Takwin creation and all the Alchemical Formulae now cost 5 ducats less (down to minimum of 5).</characteristic>
                               </characteristics>
                             </profile>
                           </profiles>
                           <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5eaa-54a5-111f-34cb" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2332-1a2c-25a9-70a2" includeChildSelections="false"/>
                           </constraints>
-                        </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="[23] Patron’s Visit" hidden="false" id="4bcb-d5b6-e865-8c71">
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bfb0-e143-c84d-17db"/>
-                          </constraints>
-                          <rules>
-                            <rule name="Patron’s Visit" id="dfc3-8935-ecf9-5079" hidden="false">
-                              <description>Your Patron or their representative makes a surprise visit to
-your Warband. If you wish, you can immediately exchange up to 10 ☼ for
-an equal number of Campaign Victory Points.</description>
-                            </rule>
-                          </rules>
                         </selectionEntry>
                       </selectionEntries>
                     </selectionEntryGroup>
