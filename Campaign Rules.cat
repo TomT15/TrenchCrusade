@@ -264,22 +264,6 @@
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Exploration Rewards" id="6de0-2f63-f1b6-1824" hidden="false" sortIndex="1">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Trench Shrine: Shrine" hidden="false" id="ae29-4ce7-8861-4020">
-                      <profiles>
-                        <profile name="Trench Shrine: Shrine" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="127a-0690-5928-aa63">
-                          <characteristics>
-                            <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                            <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                            <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Add a Field Shrine to your warband’s roster for free. 
-(Note: this adds a single Field Shrine for armies without one in their list per time taken.)</characteristic>
-                          </characteristics>
-                        </profile>
-                      </profiles>
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aed1-42cf-498e-b088" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Esoteric Library: Study" hidden="false" id="7bc6-edcb-2ee1-4f6f">
                       <profiles>
                         <profile name="Esoteric Library: Study" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="411a-7df7-019a-387f">
@@ -318,7 +302,6 @@
                   </selectionEntries>
                   <selectionEntryGroups>
                     <selectionEntryGroup name="Common Table" id="0939-6ee0-bdad-c0a4" hidden="false" sortIndex="1">
-                      <comment>Common Table</comment>
                       <selectionEntries>
                         <selectionEntry type="upgrade" import="true" name="[4] Moonshine Stash" hidden="false" id="8b31-f9b3-fb7e-0e2e">
                           <rules>
@@ -358,22 +341,6 @@ to your Arsenal.</description>
                           </rules>
                           <constraints>
                             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9700-8ef0-b72c-f4a7" includeChildSelections="false"/>
-                          </constraints>
-                        </selectionEntry>
-                        <selectionEntry type="upgrade" import="true" name="[6] Trench Shrine: Shrine" hidden="false" id="e68f-100b-7445-8570">
-                          <profiles>
-                            <profile name="Trench Shrine: Shrine" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="4f28-9ead-5979-686f">
-                              <characteristics>
-                                <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                                <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                                <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Add a Field Shrine to your warband’s roster for free. 
-(Note: this adds a single Field Shrine for armies without one in their list per time taken.)</characteristic>
-                              </characteristics>
-                            </profile>
-                          </profiles>
-                          <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0281-4ee0-74a3-c538" includeChildSelections="false"/>
                           </constraints>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="[8] Ruined House" hidden="false" id="f9a1-b9eb-b443-d3c6">
@@ -475,7 +442,7 @@ the Reroll Exploration Skill.</description>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="[16] Sniper’s Lair" hidden="false" id="f2d0-fd8f-fd10-76d3">
                           <constraints>
-                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94a1-9e85-2f46-7001" includeChildSelections="false"/>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e6a8-f688-34b6-396f" includeChildSelections="false"/>
                           </constraints>
                           <rules>
                             <rule name="Sniper&apos;s Lair" id="4cd8-6d10-ff92-e7a6" hidden="false">
@@ -494,71 +461,7 @@ Cloak of Alamut.
                             </rule>
                           </rules>
                           <selectionEntries>
-                            <selectionEntry type="upgrade" import="true" name="Sniper Nest: Scope" hidden="true" id="2986-1070-2fb0-de35">
-                              <profiles>
-                                <profile name="Found a Sniper Scope" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="8c06-3e5e-14ee-2494">
-                                  <characteristics>
-                                    <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
-                                    <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
-                                    <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
-                                    <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You have found a single Sniper Scope for use.</characteristic>
-                                  </characteristics>
-                                  <modifiers>
-                                    <modifier type="set" value="At the start of each battle, select any one model (friend or foe). That model starts the battle with +1 INFECTION MARKER." field="4834-43a9-1c93-9062">
-                                      <conditions>
-                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0b26-15c1-cebd-0077" shared="true"/>
-                                      </conditions>
-                                    </modifier>
-                                  </modifiers>
-                                </profile>
-                              </profiles>
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="645d-be48-328f-dd88" includeChildSelections="false"/>
-                              </constraints>
-                              <modifiers>
-                                <modifier type="set" value="false" field="hidden">
-                                  <conditionGroups>
-                                    <conditionGroup type="or">
-                                      <conditions>
-                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
-                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true" childName="New Antioch"/>
-                                      </conditions>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </modifier>
-                              </modifiers>
-                            </selectionEntry>
-                            <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="true" id="8422-711c-00c8-1c8c">
-                              <infoLinks>
-                                <infoLink name="Sniper Rifle" id="39f8-6c15-e264-0471" hidden="false" type="profile" targetId="6eb2-c600-98e7-16d3"/>
-                              </infoLinks>
-                              <constraints>
-                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4890-e5a9-8abc-66b5" includeChildSelections="false"/>
-                              </constraints>
-                              <modifiers>
-                                <modifier type="set" value="false" field="hidden">
-                                  <conditionGroups>
-                                    <conditionGroup type="or">
-                                      <conditions>
-                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
-                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true" childName="New Antioch"/>
-                                      </conditions>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </modifier>
-                                <modifier type="set" value="false" field="hidden">
-                                  <conditionGroups>
-                                    <conditionGroup type="or">
-                                      <conditions>
-                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
-                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true" childName="New Antioch"/>
-                                      </conditions>
-                                    </conditionGroup>
-                                  </conditionGroups>
-                                </modifier>
-                              </modifiers>
-                            </selectionEntry>
-                            <selectionEntry type="upgrade" import="true" name="Siege Jezzail, Alchemical Ammunition, and a Cloak of Alamut." hidden="true" id="0b16-82c4-fcdf-b8d1">
+                            <selectionEntry type="upgrade" import="true" name="Siege Jezzail, Alchemical Ammunition, and a Cloak of Alamut." hidden="true" id="0b16-82c4-fcdf-b8d1" sortIndex="2">
                               <infoLinks>
                                 <infoLink name="Alchemical Ammunition" id="7272-b3a7-5102-f383" hidden="false" type="profile" targetId="c296-2021-0947-c6c7"/>
                                 <infoLink name="Cloak of Alamut" id="fa94-aad0-e8fb-4075" hidden="false" type="profile" targetId="fc84-ca32-2672-c684"/>
@@ -577,7 +480,68 @@ Cloak of Alamut.
                             </selectionEntry>
                           </selectionEntries>
                           <selectionEntryGroups>
-                            <selectionEntryGroup name="Black Grail" id="ebf4-62a9-0dc4-f814" hidden="true" sortIndex="4">
+                            <selectionEntryGroup name="Heretic Legion" id="4210-d273-eac9-ef6d" hidden="true" sortIndex="3">
+                              <infoLinks>
+                                <infoLink name="Automatic Rifle" id="631b-9d1d-da5a-87c8" hidden="false" type="profile" targetId="c35c-a506-683d-6c3f"/>
+                              </infoLinks>
+                              <modifiers>
+                                <modifier type="set" value="false" field="hidden">
+                                  <conditions>
+                                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="6941-ec54-3001-8288" shared="true" childName="Heretic Legion"/>
+                                  </conditions>
+                                </modifier>
+                              </modifiers>
+                            </selectionEntryGroup>
+                            <selectionEntryGroup name="New Antioch and Trench Pilgrim options" id="5d00-7a12-6132-61a4" hidden="true" sortIndex="1">
+                              <selectionEntries>
+                                <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="false" id="8422-711c-00c8-1c8c">
+                                  <infoLinks>
+                                    <infoLink name="Sniper Rifle" id="39f8-6c15-e264-0471" hidden="false" type="profile" targetId="6eb2-c600-98e7-16d3"/>
+                                  </infoLinks>
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4890-e5a9-8abc-66b5" includeChildSelections="false"/>
+                                  </constraints>
+                                </selectionEntry>
+                                <selectionEntry type="upgrade" import="true" name="Sniper Nest: Scope" hidden="false" id="2986-1070-2fb0-de35">
+                                  <profiles>
+                                    <profile name="Found a Sniper Scope" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="8c06-3e5e-14ee-2494">
+                                      <characteristics>
+                                        <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
+                                        <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
+                                        <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
+                                        <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You have found a single Sniper Scope for use.</characteristic>
+                                      </characteristics>
+                                      <modifiers>
+                                        <modifier type="set" value="At the start of each battle, select any one model (friend or foe). That model starts the battle with +1 INFECTION MARKER." field="4834-43a9-1c93-9062">
+                                          <conditions>
+                                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0b26-15c1-cebd-0077" shared="true"/>
+                                          </conditions>
+                                        </modifier>
+                                      </modifiers>
+                                    </profile>
+                                  </profiles>
+                                  <constraints>
+                                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="645d-be48-328f-dd88" includeChildSelections="false"/>
+                                  </constraints>
+                                </selectionEntry>
+                              </selectionEntries>
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f740-a283-f9f1-7dc8" includeChildSelections="false"/>
+                              </constraints>
+                              <modifiers>
+                                <modifier type="set" value="false" field="hidden">
+                                  <conditionGroups>
+                                    <conditionGroup type="or">
+                                      <conditions>
+                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="d54d-055d-bbc0-a20f" shared="true"/>
+                                        <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="707d-5bdf-586e-f704" shared="true" childName="New Antioch"/>
+                                      </conditions>
+                                    </conditionGroup>
+                                  </conditionGroups>
+                                </modifier>
+                              </modifiers>
+                            </selectionEntryGroup>
+                            <selectionEntryGroup name="Black Grail" id="ebf4-62a9-0dc4-f814" hidden="true">
                               <infoLinks>
                                 <infoLink name="Corruption Belcher" id="35f0-8df3-4620-baaa" hidden="false" type="profile" targetId="801f-50a4-1ea2-7b92"/>
                                 <infoLink name="Field Shrine" id="4c78-f74e-1400-81de" hidden="false" type="profile" targetId="76e2-0e5b-972a-0f69"/>
@@ -585,31 +549,22 @@ Cloak of Alamut.
                               <modifiers>
                                 <modifier type="set" value="false" field="hidden">
                                   <conditions>
-                                    <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="c5a0-e794-7661-ebb7" shared="true" childName="Black Grail"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="0b26-15c1-cebd-0077" shared="true" childName="Black Grail"/>
                                   </conditions>
                                 </modifier>
                               </modifiers>
                             </selectionEntryGroup>
-                            <selectionEntryGroup name="The Court" id="80eb-9523-0749-a6ce" hidden="true" sortIndex="5">
+                            <selectionEntryGroup name="The Court" id="80eb-9523-0749-a6ce" hidden="true">
                               <infoLinks>
-                                <infoLink name="Ophidian Rifle" id="6095-310c-4dc9-8068" hidden="false" type="profile" targetId="d8fe-561c-9243-f9b8"/>
+                                <infoLink name="Ophidian Rifle" id="a849-b356-8819-c2b5" hidden="false" type="profile" targetId="d8fe-561c-9243-f9b8"/>
                               </infoLinks>
+                              <constraints>
+                                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3f7b-d215-092f-032d" includeChildSelections="false"/>
+                              </constraints>
                               <modifiers>
                                 <modifier type="set" value="false" field="hidden">
                                   <conditions>
-                                    <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="50ae-a540-4d66-0d43" shared="true" childName="The Court"/>
-                                  </conditions>
-                                </modifier>
-                              </modifiers>
-                            </selectionEntryGroup>
-                            <selectionEntryGroup name="Heretic Legion" id="4210-d273-eac9-ef6d" hidden="true">
-                              <infoLinks>
-                                <infoLink name="Automatic Rifle" id="631b-9d1d-da5a-87c8" hidden="false" type="profile" targetId="c35c-a506-683d-6c3f"/>
-                              </infoLinks>
-                              <modifiers>
-                                <modifier type="set" value="false" field="hidden">
-                                  <conditions>
-                                    <condition type="instanceOf" value="1" field="selections" scope="primary-category" childId="7ba1-f516-e8cf-3957" shared="true" childName="Heretic"/>
+                                    <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="44b9-e92b-2dc0-6820" shared="true" childName="Court of the Seven-Headed Serpent"/>
                                   </conditions>
                                 </modifier>
                               </modifiers>
@@ -653,6 +608,22 @@ and add them to your Arsenal. In addition, when you are choosing the
 items, reduce the Cost of any Weapons by 1 ☼ to a minimum of 1 ☼ .</description>
                             </rule>
                           </rules>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="[6] Trench Shrine: Shrine" hidden="false" id="ae29-4ce7-8861-4020">
+                          <profiles>
+                            <profile name="Trench Shrine: Shrine" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="127a-0690-5928-aa63">
+                              <characteristics>
+                                <characteristic typeId="3f15-74a1-4d35-3642" name="Type"/>
+                                <characteristic typeId="2b32-2f45-9c06-7a77" name="Range"/>
+                                <characteristic typeId="5093-5528-b08f-1496" name="Keywords"/>
+                                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Add a Field Shrine to your warband’s roster for free. 
+(Note: this adds a single Field Shrine for armies without one in their list per time taken.)</characteristic>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aed1-42cf-498e-b088" includeChildSelections="false"/>
+                          </constraints>
                         </selectionEntry>
                       </selectionEntries>
                     </selectionEntryGroup>

@@ -1223,6 +1223,57 @@ This model gains 1” to its movement characteristic and the SKIRMISHER keyword.
             <entryLink import="true" name="Ammunitions" hidden="false" id="ae79-f528-96ad-8c6f" type="selectionEntryGroup" targetId="a7db-7c08-54bb-880e"/>
           </entryLinks>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Ophidian Rifle - Sniper&apos;s Lair" hidden="true" id="fa1a-d593-7e23-28e4" sortIndex="7">
+          <infoLinks>
+            <infoLink name="Ophidian Rifle" id="4df6-502a-137b-1c93" hidden="false" type="profile" targetId="d8fe-561c-9243-f9b8">
+              <modifiers>
+                <modifier type="increment" value="6" field="31a7-b5e8-41dc-5fd1">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="4467-39c5-0252-1b2d" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Heavy" id="b136-d08e-63c6-3b96" hidden="false" type="rule" targetId="fbac-638f-ff95-d704"/>
+            <infoLink name="Ignore [Modifier]" id="a330-4bcb-021c-cb7f" hidden="false" type="rule" targetId="fd2f-4a14-7db4-8ec9"/>
+          </infoLinks>
+          <categoryLinks>
+            <categoryLink name="Heavy" hidden="false" id="8e45-bdad-7332-190a" targetId="70c9-988d-71a7-7654" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8743-bd4e-5259-2704" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="model" childId="3de0-192c-3ec2-51be" shared="true"/>
+                    <condition type="equalTo" value="1" field="selections" scope="roster" childId="f2d0-fd8f-fd10-76d3" shared="true" childName="[16] Sniper’s Lair" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="35" field="8d43-33fd-332d-17a6">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="model" childId="322d-1a69-dc2a-2e26" shared="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="1" field="8743-bd4e-5259-2704">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="957a-7a31-9700-9191" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" value="1" field="8743-bd4e-5259-2704">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="roster" childId="eab2-b1de-9270-5950" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Ammunitions" hidden="false" id="1b27-fa3a-df07-61e8" type="selectionEntryGroup" targetId="a7db-7c08-54bb-880e"/>
+          </entryLinks>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Shield Combos" id="a961-6481-db33-a271" hidden="false" sortIndex="18">
