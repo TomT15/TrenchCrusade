@@ -44,6 +44,7 @@
     <categoryEntry name="Negate Barbed wire" id="aa2f-f4b3-3003-4b43" hidden="false">
       <description>Negate difficult and dangerous terrain caused by barbed wire</description>
     </categoryEntry>
+    <categoryEntry name="Ignore Off-Hand" id="8557-cae4-644d-d483" hidden="false"/>
   </categoryEntries>
   <costTypes>
     <costType name="Ducats" id="8d43-33fd-332d-17a6" defaultCostLimit="-1"/>

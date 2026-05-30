@@ -260,6 +260,25 @@
                         </modifier>
                       </modifiers>
                     </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Diabolic Circle" hidden="false" id="d4c9-a1db-c9d6-5176">
+                      <profiles>
+                        <profile name="Diabolic Circle" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="53a2-42ec-1ccc-334b">
+                          <characteristics>
+                            <characteristic name="Type" typeId="3f15-74a1-4d35-3642"/>
+                            <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
+                            <characteristic name="Keywords" typeId="5093-5528-b08f-1496"/>
+                            <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Your Patron is one of the many Diabolic Circles of the city of Dis, such as the Necromantic Temple of Bathins, the Book of True Names, or the Ifrit Order. Such Patrons empower Goetic Magicks, bestow familiars, and embolden the perversion of YHWH’s tyrannies.</characteristic>
+                          </characteristics>
+                        </profile>
+                      </profiles>
+                      <modifiers>
+                        <modifier type="set" value="false" field="hidden">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="primary-catalogue" childId="44b9-e92b-2dc0-6820" shared="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
                   </selectionEntries>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Exploration Rewards" id="6de0-2f63-f1b6-1824" hidden="false" sortIndex="1">
@@ -2962,7 +2981,7 @@ The saint guides your troops before each battle. The model with the skull gains 
               <profiles>
                 <profile name="Blessed Murder" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="2339-5aca-8346-ceee">
                   <characteristics>
-                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">If a Melee Attack made by a model with this Skill takes an enemy model Out of Action, place 1 BLESSING MARKER next to the model with this Skill.</characteristic>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">If a Melee Attack made by a model with this Skill takes an enemy model Out of Action, place 1 BLESSING MARKER next to the model with this Skill.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2977,7 +2996,7 @@ The saint guides your troops before each battle. The model with the skull gains 
                     <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Ability</characteristic>
                     <characteristic name="Range" typeId="2b32-2f45-9c06-7a77">6&quot;</characteristic>
                     <characteristic name="Keywords" typeId="5093-5528-b08f-1496">IGNORE ARMOUR</characteristic>
-                    <characteristic name="Rules" typeId="4834-43a9-1c93-9062">ACTION: A model with this Skill can take a Lash of Acheron ACTION. If it does so, take a Risky Success Roll for the model. If the roll is a Failure, nothing happens and the model’s Activation ends. If the roll is a Success or Critical Success, you can make an Injury Roll with the IGNORE ARMOUR Keyword for 1 enemy model that is within 6&quot; of the model taking the Lash of Acheron ACTION and in their line of sight.</characteristic>
+                    <characteristic name="Rules" typeId="4834-43a9-1c93-9062">ACTION: A model with this Skill can take a Lash of Acheron ACTION. If it does so, take a Success Roll for the model. If the roll is a Success or Critical Success, you can make an Injury Roll with the IGNORE ARMOUR Keyword for 1 enemy model that is within 6&quot; of the model taking the Lash of Acheron ACTION and in their line of sight.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2989,7 +3008,7 @@ The saint guides your troops before each battle. The model with the skull gains 
               <profiles>
                 <profile name="Sadistic" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="45cc-dfd7-d3bc-431f">
                   <characteristics>
-                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Add +1 DICE and +1 INJURY DICE to Melee Attacks made by a model with this Skill if the target model is Down.</characteristic>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Add +1 DICE and +1 INJURY DICE to Melee Attacks made by a model with this Skill if the target model is Down.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3013,7 +3032,7 @@ The saint guides your troops before each battle. The model with the skull gains 
               <profiles>
                 <profile name="30 Pieces of Silver" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="446d-9e8a-7d20-9a37">
                   <characteristics>
-                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">At the end of each game, your Warband gains D6x5 Ducats  for each model with this Skill that is on the Battlefield.</characteristic>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">At the start of each game, you can pay 30 ducats to your opponent. If you do so, choose a model in your opponent&apos;s Warband with the ELITE Keyword, and place D3 BLOOD MARKERS next to them. A Warband can only have 1 model with this Skill.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3025,7 +3044,7 @@ The saint guides your troops before each battle. The model with the skull gains 
               <profiles>
                 <profile name="Blood Sacrifice" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="dd8a-7c30-2dc1-5b3e">
                   <characteristics>
-                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">ACTION: A model with this Skill can take a Blood Sacrifice ACTION. If it does so, take a Success Roll for the model. On a Success or Critical Success, you can remove 1 BLOOD MARKER from the model and place it next to any other model that is within 6&quot; of the model taking the Blood Sacrifice ACTION, in their line of sight, and which does not have the ARTIFICIAL, BLACK GRAIL or DEMONIC Keywords</characteristic>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">ACTION: A model with this Skill can take a Blood Sacrifice ACTION. If it does so, take a Success Roll for the model. On a Success or Critical Success, you can remove 1 BLOOD MARKER from the model taking the Blood Sacrifice ACTION and place it next to any other model that is within 6&quot; of them, in their Line of Sight, and which does not have the ARTIFICIAL, BLACK GRAIL or DEMONIC Keywords.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3619,6 +3638,89 @@ The saint guides your troops before each battle. The model with the skull gains 
               </profiles>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Diabolic Circle" id="d3c7-26f5-583a-606c" hidden="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Gifted Familiar" hidden="false" id="52d2-df64-abf5-482e" sortIndex="1">
+              <profiles>
+                <profile name="Gifted Familiar" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="b482-5cd0-ddf6-98c1">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Increase the limit of Goetic Powers available to a model with this Skill by 1, even if that number is 0. In addition, this model can purchase Goetic Powers (up to their Limit) in the Quartermaster Step without paying 1 ❂ to do so. This Skill cannot be taken by a Hunter of the Left-Hand Path.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e7a-553a-8263-5244" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mark of the Undying Worm" hidden="false" id="c7da-26a6-4690-5751" sortIndex="2">
+              <profiles>
+                <profile name="Mark of the Undying Worm" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="f464-a7d0-24de-0258">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">When a model gains this Skill, you can remove one Injury and one Battle Scar from it.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2c6-8425-4451-22f8" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Necromantic Ward" hidden="false" id="1ed8-0362-bc8f-b925" sortIndex="3">
+              <profiles>
+                <profile name="Necromantic Ward" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="74d9-30a2-c2d2-ff70">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">A model with this Skill has the BLOCK and SKIRMISHER Keywords.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="08eb-8c5f-b555-761c" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Not of this Earth" hidden="false" id="ec26-693c-b59c-3492" sortIndex="4">
+              <profiles>
+                <profile name="Not of this Earth" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="a4fe-94a4-450b-e1f0">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">A model with this Skill does not count towards the number of models in your Warband for the purposes of determining Initiative, but counts as 2 models for the purposes of Morale. A Warband can have one model with this Skill.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="358a-1f92-c77d-2ff0" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tabula Rasa" hidden="false" id="8235-a2a8-5441-514e" sortIndex="5">
+              <profiles>
+                <profile name="Tabula Rasa" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="e963-9b02-e46d-e831">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">When a model gains this Skill, they may immediately exchange any number of Goetic Powers they know (except for those on their Warband Entry) with an equal amount of Goetic Powers available to them at no cost in ducats. A model may gain this Skill multiple times throughout a campaign.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1dca-aa19-11e2-4ec4" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Trickery and Illusion" hidden="false" id="3c9e-9737-3534-76df" sortIndex="6">
+              <profiles>
+                <profile name="Trickery and Illusion" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="bf80-2f72-532b-45f0">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">After all friendly models have deployed, you may redeploy D3 friendly models if a model with this Skill is on the battlefield. A Warband can only have one model with this Skill.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="36c5-e62c-ce29-2853" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="d4c9-a1db-c9d6-5176" shared="true" includeChildSelections="true" includeChildForces="true" childName="Diabolic Circle"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
