@@ -371,7 +371,17 @@ This model gains 1” to its movement characteristic and the SKIRMISHER keyword.
                 <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
                 <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
                 <characteristic name="Keywords" typeId="5093-5528-b08f-1496"/>
-                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">An Entropital Dermis confers a -1 INJURY DICE to Injury Rolls made against this Model. Enemy Models cannot retreat from a model wearing the Entropital Dermis, and are considered to be engaged in melee with the wearer from 3” away instead of 1”. The wearer and any Model it is engaged with must still be within 1” of each other to perform a Melee attack (Including an Attack of Opportunity).</characteristic>
+                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">+ The material this cloak is made of looks like flesh, but humanity’s brightest minds have yet to 
+determine whether it’s still alive, or ever was. All that is known as fact is that the creature, thing, 
+whatever it is that constitutes the body of this cloak hungers, and that once you are close enough to 
+attract the Dermis’attention, there is no way human or divine to leave. 
+
+
++ An Entropital Dermis confers a -1D to Injury Rolls made against this Model. Enemy Models cannot 
+retreat from a model wearing the Entropital Dermis, and are considered to be engaged in melee 
+with the wearer from 3”away instead of 1”. 
++ N.B: The wearer and any Model it is engaged with must still be within 1”of each other to perform a 
+Melee attack (Including an Attack of Opportunity).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -386,7 +396,15 @@ This model gains 1” to its movement characteristic and the SKIRMISHER keyword.
                 <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
                 <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
                 <characteristic name="Keywords" typeId="5093-5528-b08f-1496"/>
-                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">This equipment is treated as an upgrade that cannot be removed once purchased. When this upgrade is purchased you may choose to remove a scar from this Model. Additionally any time you roll 3 or more 6’s on exploration (after exploration skills like Set Dice or Rerolls have been accounted for), you may choose to pay 1 Glory to remove 1 scar from this Model.</characteristic>
+                <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Reborn anew, this Servant of the Seething black is the closest to a perfect reflection of His Will as can 
+be. Touched by its own deity, the creature is no longer mortal and most certainly not divine. It has 
+become a universal constant, a fact of reality, in the image of its God. 
+
+
++ This equipment is treated as an upgrade that cannot be removed once purchased. 
++ When this upgrade is purchased you may choose to remove a scar from this Model. 
++ Additionally any time you roll 3 or more 6&apos;s on exploration (after exploration skills like Set Dice or 
+Rerolls have been accounted for), you may choose to pay 1 Glory to remove 1 scar from this Model.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3564,7 +3582,10 @@ This model gains 1” to its movement characteristic and the SKIRMISHER keyword.
                     <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Spell (Cost 2)</characteristic>
                     <characteristic name="Range" typeId="2b32-2f45-9c06-7a77"/>
                     <characteristic name="Keywords" typeId="5093-5528-b08f-1496"/>
-                    <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You can cast this spell once per turn after a friendly model (including the spellcaster) that is eligible to pay this spell’s cost is hit by an attack, before the injury roll is made. If you do so, the chosen model pays this spell’s cost and ignores all Minor Injury and Downed Injury results, and cannot gain Blood Markers in any way, including paying the cost of any other Goetic Spells, until the end of its next activation.</characteristic>
+                    <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You can cast this spell once per turn when a friendly model (including the spellcaster) that is eligible to 
+pay this spell’s cost is hit by an attack, before the injury roll is made. Until the end of its next activation, 
+the model that pays this spell’s cost ignores all Minor Injury and Down Injury results, and cannot gain 
+Blood Markers in any way</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5558,6 +5579,8 @@ Unlike Yoke Fiends, Cultists can be promoted to ELITE.</characteristic>
             <modifier type="set" value="Cultist" field="name"/>
             <modifier type="set" value="Cultist" field="name" affects="profiles.Unit"/>
             <modifier type="remove" value="420c-0871-4283-b95b" field="category"/>
+            <modifier type="add" value="1cdc-ad46-68bc-8492" field="category"/>
+            <modifier type="add" value="1bc3-82b4-ba03-66fc" field="category"/>
           </modifiers>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="1fda-e6a9-7628-9c49" shared="true" includeChildSelections="true"/>
@@ -6175,6 +6198,7 @@ Unlike Yoke Fiends, Cultists can be promoted to ELITE.</characteristic>
             <characteristic name="Range" typeId="2b32-2f45-9c06-7a77">18&quot;</characteristic>
             <characteristic name="Keywords" typeId="5093-5528-b08f-1496"/>
             <characteristic name="Rules" typeId="4834-43a9-1c93-9062">You must take a Cast Spell ACTION with the spellcaster in order for it to cast this spell. If you do so, you can carry out one of the following Commands with a Yoke Fiend that is within 18&quot; of the spellcaster. Carrying out a Command does not stop the Yoke Fiend from being Activated in the same Turn (before or after the Command was issued).
+
 - Sacrifice Command: The Yoke Fiend kills itself. It is taken Out of Action and crossed off its Warband Roster.
 - Fight Command: The Yoke Fiend carries out a Melee Attack.
 - Move Command: The Yoke Fiend carries out a Move (it cannot Charge or Retreat).
@@ -6186,9 +6210,21 @@ Unlike Yoke Fiends, Cultists can be promoted to ELITE.</characteristic>
             <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">As long as there are at least a total of 3 Blood Markers on friendly models within 4&quot; of a Faceless, every Out of Action injury result against it are treated as Downed instead. Any effects that would prevent a Downed state do not apply when this occurs. Additionally, any friendly models with the CULTIST keyword within 4” and in its Line of Sight of the Faceless gain -1 INJURY DICE to all Injury rolls made against them.</characteristic>
           </characteristics>
         </profile>
-        <profile name="The Gift" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="b58e-e861-cf98-1cf2">
+        <profile name="The Gift" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="b58e-e861-cf98-1cf2" noindex="false">
           <characteristics>
             <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">A Faceless can take The Gift ACTION when it takes an enemy model Out of Action in Melee. If they do so, take a Risky Success Roll for the model. If the roll is a Failure, the Faceless’s Activation ends immediately. If the roll is a Success or Critical Success, create a new friendly Cultist armed with a trench club and the same number of Blood Markers on it as the deceased enemy model had. The new Cultist is not counted for the purposes of Morale or any Objectives in the Battle, and dies after the battle has ended.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Goetic Magic" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="6d7f-b74f-5b90-da2b">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Faceless can cast the Goetic Spell Slavemaster (included in its cost), and you may 
+purchase up to one more GOETIC Spell for the Faceless.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Sculpted Flesh" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="4b71-d7a6-e21d-c315">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Faceless’ form is the epitome of the Fang’s rituals, with direct guidance from the 
+Seething Black itself. It is subject to the rules for STRONG creatures</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6231,11 +6267,12 @@ Unlike Yoke Fiends, Cultists can be promoted to ELITE.</characteristic>
       </modifiers>
       <categoryLinks>
         <categoryLink targetId="3de0-192c-3ec2-51be" id="b880-935e-98ff-2579" primary="true" name="Elite"/>
-        <categoryLink targetId="50ae-a540-4d66-0d43" id="ceef-b211-1f18-0aaf" primary="false" name="The Court"/>
         <categoryLink targetId="4f5c-027d-253c-ffa3" id="ecf5-39a5-3e52-9be1" primary="false" name="Fear"/>
         <categoryLink targetId="afcc-5f24-1c7c-63c4" id="a174-05d7-62ca-8994" primary="false" name="Strong"/>
         <categoryLink targetId="420c-0871-4283-b95b" id="8495-16c2-c4ad-2934" primary="false" name="Demonic"/>
         <categoryLink targetId="f0ef-ba0d-8963-331a" id="5d06-6aa3-e15b-00ec" primary="false" name="Negate Fire"/>
+        <categoryLink targetId="1cdc-ad46-68bc-8492" id="3d35-cf6e-8944-8335" primary="false" name="The Fang"/>
+        <categoryLink targetId="afb9-39f5-82d9-46ed" id="4b7f-e7a9-3749-fb58" primary="false" name="Leader"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Stalker" hidden="true" id="fb1c-94da-c9c8-be8e">
@@ -6344,6 +6381,19 @@ Unlike Yoke Fiends, Cultists can be promoted to ELITE.</characteristic>
               <comment>armour adjustments</comment>
             </modifierGroup>
           </modifierGroups>
+        </profile>
+        <profile name="Fear" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="2cb6-2ecc-c02d-45a7">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Stalker is a terrifying shape glimpsed in the corner of your eye. It is subject to the rules of a 
+creature with the FEAR keyword.</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="1fda-e6a9-7628-9c49" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
         </profile>
       </profiles>
       <costs>
@@ -6488,7 +6538,8 @@ Unlike Yoke Fiends, Cultists can be promoted to ELITE.</characteristic>
       <categoryLinks>
         <categoryLink targetId="3de0-192c-3ec2-51be" id="4166-fc38-5b0e-0cba" primary="true" name="Elite"/>
         <categoryLink targetId="420c-0871-4283-b95b" id="e908-2abf-ecb8-bdc9" primary="false" name="Demonic"/>
-        <categoryLink targetId="f0ef-ba0d-8963-331a" id="8cee-22f0-1891-e0f1" primary="false" name="Negate Fire"/>
+        <categoryLink targetId="1cdc-ad46-68bc-8492" id="9655-66c9-a492-d555" primary="false" name="The Fang"/>
+        <categoryLink targetId="4f5c-027d-253c-ffa3" id="6d02-f691-e684-abf2" primary="false" name="Fear"/>
       </categoryLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d26e-4f50-5a77-99a3" includeChildSelections="true"/>

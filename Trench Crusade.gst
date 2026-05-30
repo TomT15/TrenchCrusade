@@ -41,6 +41,11 @@
     <categoryEntry name="Negate Shrapnel" id="baee-43b9-2e20-9755" hidden="false" publicationId="c658-4a10-e1fe-befc">
       <description>Do not take a blood markers from sharpnel keyword</description>
     </categoryEntry>
+    <categoryEntry name="The Fang" id="1cdc-ad46-68bc-8492" hidden="false"/>
+    <categoryEntry name="Cultist" id="1bc3-82b4-ba03-66fc" hidden="false">
+      <description>Cultists are treated as Yoke Fiends for the purposes of Equipment and the spell Slave Master. 
+Unlike Yoke Fiends, Cultists can be promoted to ELITE. </description>
+    </categoryEntry>
   </categoryEntries>
   <costTypes>
     <costType name="Ducats" id="8d43-33fd-332d-17a6" defaultCostLimit="-1"/>
