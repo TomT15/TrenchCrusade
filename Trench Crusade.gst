@@ -43,8 +43,7 @@
     </categoryEntry>
     <categoryEntry name="The Fang" id="1cdc-ad46-68bc-8492" hidden="false"/>
     <categoryEntry name="Cultist" id="1bc3-82b4-ba03-66fc" hidden="false">
-      <description>Cultists are treated as Yoke Fiends for the purposes of Equipment and the spell Slave Master. 
-Unlike Yoke Fiends, Cultists can be promoted to ELITE. </description>
+      <description>Cultists are treated as Yoke Fiends for the purposes of Equipment and the spell Slave Master. Unlike Yoke Fiends, Cultists can be promoted to ELITE. </description>
     </categoryEntry>
     <categoryEntry name="Negate Barbed wire" id="aa2f-f4b3-3003-4b43" hidden="false">
       <description>Negate difficult and dangerous terrain caused by barbed wire</description>
