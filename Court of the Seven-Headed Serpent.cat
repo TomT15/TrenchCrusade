@@ -5772,7 +5772,6 @@ Seething Black itself. It is subject to the rules for STRONG creatures</characte
         <categoryLink targetId="420c-0871-4283-b95b" id="8495-16c2-c4ad-2934" primary="false" name="Demonic"/>
         <categoryLink targetId="f0ef-ba0d-8963-331a" id="5d06-6aa3-e15b-00ec" primary="false" name="Negate Fire"/>
         <categoryLink targetId="1cdc-ad46-68bc-8492" id="3d35-cf6e-8944-8335" primary="false" name="The Fang"/>
-        <categoryLink targetId="afb9-39f5-82d9-46ed" id="4b7f-e7a9-3749-fb58" primary="false" name="Leader"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Stalker" hidden="true" id="fb1c-94da-c9c8-be8e">
