@@ -46,6 +46,9 @@
       <description>Cultists are treated as Yoke Fiends for the purposes of Equipment and the spell Slave Master. 
 Unlike Yoke Fiends, Cultists can be promoted to ELITE. </description>
     </categoryEntry>
+    <categoryEntry name="Negate Barbed wire" id="aa2f-f4b3-3003-4b43" hidden="false">
+      <description>Negate difficult and dangerous terrain caused by barbed wire</description>
+    </categoryEntry>
   </categoryEntries>
   <costTypes>
     <costType name="Ducats" id="8d43-33fd-332d-17a6" defaultCostLimit="-1"/>
@@ -65,16 +68,46 @@ Unlike Yoke Fiends, Cultists can be promoted to ELITE. </description>
       <characteristicTypes>
         <characteristicType name="Type" id="f90e-171a-4ca6-3845"/>
         <characteristicType name="Range" id="31a7-b5e8-41dc-5fd1"/>
-        <characteristicType name="Keywords" id="8cd6-8018-f2da-5ede"/>
-        <characteristicType name="Rules" id="87f0-637b-734a-22eb"/>
+        <characteristicType name="Keywords" id="8cd6-8018-f2da-5ede">
+          <formatRules>
+            <formatRule name="New Format Rule" id="9d7b-ed83-5c46-815c" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType name="Rules" id="87f0-637b-734a-22eb">
+          <formatRules>
+            <formatRule name="New Format Rule" id="c818-19b2-82d2-5e69" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
       </characteristicTypes>
     </profileType>
     <profileType name="Battlekit" id="7079-589c-df69-fa7e" hidden="false" sortIndex="3">
       <characteristicTypes>
         <characteristicType name="Type" id="3f15-74a1-4d35-3642"/>
-        <characteristicType name="Range" id="2b32-2f45-9c06-7a77"/>
-        <characteristicType name="Keywords" id="5093-5528-b08f-1496"/>
-        <characteristicType name="Rules" id="4834-43a9-1c93-9062"/>
+        <characteristicType name="Range" id="2b32-2f45-9c06-7a77">
+          <formatRules>
+            <formatRule name="New Format Rule" id="9d28-864d-706b-d580" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType name="Keywords" id="5093-5528-b08f-1496">
+          <formatRules>
+            <formatRule name="New Format Rule" id="8bcc-1e9e-5d9b-7b0f" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
+        <characteristicType name="Rules" id="4834-43a9-1c93-9062">
+          <formatRules>
+            <formatRule name="New Format Rule" id="d849-c0d7-c0d5-7e38" hidden="false" type="regex" match="^$" replace="-">
+              <comment>Empty → -</comment>
+            </formatRule>
+          </formatRules>
+        </characteristicType>
       </characteristicTypes>
     </profileType>
     <profileType name="Ability" id="058c-866b-6487-ccc4" hidden="false" sortIndex="4">
@@ -1048,8 +1081,8 @@ Shovel: A model equipped with a Shovel that starts the game on Open terrain has 
       <characteristics>
         <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
         <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">24&quot;</characteristic>
-        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+1 DICE, INFECTION MARKERS</characteristic>
-        <characteristic name="Rules" typeId="87f0-637b-734a-22eb">Fresh Meat: If an Injury Roll for a Ranged Attack made with a Black Spot Rifle does not take an enemy model Out of Action, a Ravenous within 12” of the attacking model can immediately carry out a Charge move. This Charge move does not stop that Ravenous from also being Activated in the same Turn (before or after this Charge move was made).</characteristic>
+        <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+1 DICE, -1 INJURY DICE, ASSAULT, INFECTION MARKERS</characteristic>
+        <characteristic name="Rules" typeId="87f0-637b-734a-22eb">If an Injury Roll for a Ranged Attack made with a Black Spot Rifle does not take an enemy model Out of Action, a Ravenous or Hound of the Black Grail within 12” of the attacking model can immediately carry out a Charge move. This Charge move does not stop that model from also being Activated in the same Turn (before or after this Charge move was made).</characteristic>
       </characteristics>
     </profile>
     <profile name="Butcher Bayonet" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="1063-b1d1-807f-91ec" publicationId="c658-4a10-e1fe-befc" page="114">
@@ -1057,9 +1090,11 @@ Shovel: A model equipped with a Shovel that starts the game on Open terrain has 
         <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-handed</characteristic>
         <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+1 INJURY DICE, CUMBERSOME</characteristic>
-        <characteristic name="Rules" typeId="87f0-637b-734a-22eb">Bayonet: A model must have a Ranged Weapon with a Bayonet Lug for it to have a Butcher Bayonet.
+        <characteristic name="Rules" typeId="87f0-637b-734a-22eb">Twisted Addition: A model must have a Ranged Weapon with a Bayonet Lug for it to have a Butcher Bayonet.
 
-Hack and Hew: A model with a Butcher Bayonet, and Friendly Ravenous, Cradle Thralls, Lords of Tumours and Desiccated Husks within 3” of a model with a Butcher Bayonet, achieve a Critical Success on an 11+ for their Melee Attacks.</characteristic>
+Hack and Hew: Friendly models within 3” of a model with a
+Butcher Bayonet achieve a Critical Success on an 11+ for
+their Melee Attacks.</characteristic>
       </characteristics>
     </profile>
     <profile name="Grasping Maw" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="3dd1-198c-9222-d273">
@@ -1067,9 +1102,7 @@ Hack and Hew: A model with a Butcher Bayonet, and Friendly Ravenous, Cradle Thra
         <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
         <characteristic name="Range" typeId="2b32-2f45-9c06-7a77">12&quot;</characteristic>
         <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-</characteristic>
-        <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Grasp ACTION: A model with this Battlekit can take a Grasp ACTION. If it does so, take a Risky Success Roll for the model. If the roll is a Failure, the model’s Activation ends immediately. If the roll is a Success or Critical Success, pick 1 enemy model that is within 12” of the model taking the Grasp ACTION and in their Line of Sight. You can move the model up to D6”. The move must be in a straight line directly towards the model taking the Grasp ACTION, and can be used to and can be used to make the model move with 1” of an enemy or retreat, but you cannot make Melee attacks with models within 1” of it before it retreats. The model stops if the model moves into contact with another model, Difficult, Dangerous or Impassable Terrain, or a terrain piece it cannot cross without having to Climb or Jump.
- 
-Mutation: Once this Battlekit has been equipped, it cannot be removed or lost over the course of a campaign for any reason.</characteristic>
+        <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Grasp ACTION: If a model takes a Grasp ACTION, take a Risky Success Roll for the model. If the roll is a Failure, the model’s Activation ends immediately. If the roll is a Success or Critical Success, pick 1 enemy model that is within 12” of the model taking the Grasp ACTION and in their Line of Sight. You can move the model 3”. The move must be in a straight line directly towards the model taking the Grasp ACTION, and can be used to make the model Jump Down, move within 1” of an enemy or retreat, but you cannot make Melee attacks with models within 1” of it before it retreats. The model stops if the model moves into contact with another model, Difficult, Dangerous or Impassable Terrain, or a terrain piece it cannot cross without having to Climb or Jump Across.</characteristic>
       </characteristics>
     </profile>
     <profile name="Devouring Jaws" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="f5c3-6c1d-c0b8-98ae">
@@ -1077,10 +1110,7 @@ Mutation: Once this Battlekit has been equipped, it cannot be removed or lost ov
         <characteristic name="Type" typeId="3f15-74a1-4d35-3642">Equipment</characteristic>
         <characteristic name="Range" typeId="2b32-2f45-9c06-7a77">-</characteristic>
         <characteristic name="Keywords" typeId="5093-5528-b08f-1496">-</characteristic>
-        <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Masticate: A model with Devouring Jaws can make an additional Melee Attack ACTION once per Activation. If it does so, place 1 BLOOD MARKER beside it.
-
-
-Mutation: Once this Battlekit has been equipped, it cannot be removed or lost over the course of a campaign for any reason.</characteristic>
+        <characteristic name="Rules" typeId="4834-43a9-1c93-9062">Devour ACTION: If a model takes a Devour ACTION, it can make a Melee Attack against an enemy model within 1”. A Devour Melee Attack does not use a Melee Weapon and has the CRITICAL Keyword. In addition, if the Devour Melee Attack does not take the targeted model Out of Action, place 1 BLOOD MARKER next to the model taking the Devour ACTION.</characteristic>
       </characteristics>
     </profile>
     <profile name="Pestilent Fang" typeId="090c-b12e-592a-9874" typeName="Weapon" hidden="false" id="a595-aa3e-986e-edf0">
@@ -1088,9 +1118,10 @@ Mutation: Once this Battlekit has been equipped, it cannot be removed or lost ov
         <characteristic name="Type" typeId="f90e-171a-4ca6-3845">2-Handed</characteristic>
         <characteristic name="Range" typeId="31a7-b5e8-41dc-5fd1">Melee</characteristic>
         <characteristic name="Keywords" typeId="8cd6-8018-f2da-5ede">+1 INJURY MODIFIER, HEAVY</characteristic>
-        <characteristic name="Rules" typeId="87f0-637b-734a-22eb">Gnashing Blow: When a Melee Attack made with a Pestilent Fang causes 1 or more BLOOD MARKERS to be placed next to the target, place 1 INFECTION MARKER next to the target model.
+        <characteristic name="Rules" typeId="87f0-637b-734a-22eb">Gnashing Blow: When a Melee Attack made with a Pestilent Fang causes 1 or more BLOOD MARKERS to be placed next to the target, place 1 INFECTION MARKER next to the target model.
 
-Rotten Splinters: If the Success Roll for a Melee Attack made with a Pestilent Fang is a Critical Success then the Injury Roll for the Attack has the IGNORE ARMOUR Keyword.</characteristic>
+
+Rotten Splinters: If the Success Roll for a Melee Attack made with a Pestilent Fang is a Critical Success then the Injury Roll for the Attack has the IGNORE ARMOUR Keyword.</characteristic>
       </characteristics>
     </profile>
     <profile name="Unending Starvation" typeId="7079-589c-df69-fa7e" typeName="Battlekit" hidden="false" id="5f9b-de73-1181-b57a">
@@ -1112,4 +1143,416 @@ Mutation: Once this Battlekit has been equipped, it cannot be removed or lost ov
       </characteristics>
     </profile>
   </sharedProfiles>
+  <forceEntries>
+    <forceEntry name="Warband" id="eef8-974d-98a4-8d2e" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" hidden="false" id="a1ec-c1a7-67f1-3c3d" targetId="705b-e23f-e9c2-58ab"/>
+        <categoryLink name="Elite" hidden="false" id="d674-9dad-3a52-6f42" targetId="3de0-192c-3ec2-51be"/>
+        <categoryLink name="Troop" hidden="false" id="8ece-5350-0612-123a" targetId="bd43-ddb1-262d-4489"/>
+        <categoryLink name="Mercenary" hidden="false" id="a7d4-1035-32a8-15c4" targetId="3dfb-701d-e89c-eba2"/>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="model" import="true" name="Takwin Homunculus" hidden="true" id="be87-2199-9bda-1a4f">
+      <profiles>
+        <profile name="Takwin Homunculus" typeId="b3af-94f9-2e35-d1c5" typeName="Unit" hidden="false" id="8df3-9e37-23c4-8cff">
+          <characteristics>
+            <characteristic name="Movement" typeId="b725-e0a4-16ae-8df2">6&quot;/Infantry</characteristic>
+            <characteristic name="Ranged" typeId="1a4f-d2cd-c405-6200">+0 Dice</characteristic>
+            <characteristic name="Melee" typeId="12e8-ff8c-c933-9eb5">+0 Dice</characteristic>
+            <characteristic name="Armour" typeId="5de9-d70e-9021-6f71">0</characteristic>
+            <characteristic name="Base" typeId="73ae-cc17-596e-0481">25mm</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="8&quot;/Flying" field="b725-e0a4-16ae-8df2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="6fe0-553d-a4b4-ecd6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="32mm" field="73ae-cc17-596e-0481">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="26fd-9847-fe97-9aff" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="50mm" field="73ae-cc17-596e-0481">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="f9f7-089c-a38d-717f" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="+1 Dice" field="12e8-ff8c-c933-9eb5">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="26fd-9847-fe97-9aff" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="+1 Dice" field="1a4f-d2cd-c405-6200">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="804f-e412-ea03-aa6d" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="60mm" field="73ae-cc17-596e-0481">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="self" childId="7006-0a35-7bbc-90c6" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5de9-d70e-9021-6f71">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="self" childId="780c-f898-6d4b-cfe7" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <comment>armour adjustments</comment>
+            </modifierGroup>
+          </modifierGroups>
+        </profile>
+        <profile name="Re-creation" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="126a-355e-a21e-b08f">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">If a Takwin Homunculus is killed in the post-battle sequence, you do not have to remove it from your roster. Instead, you can spend 40 ducats in the following Quartermaster Step to leave it on the Roster.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Artificial Life" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="21ca-3993-3439-2161">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Add -1 DICE to Injury Rolls for a Tawkin Homunculus.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Pummeling Blows" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="3ae7-9f60-8251-a9f1">
+          <characteristics>
+            <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">A Takwin Homunculus can make a Melee Attack even though it does not have any Melee Weapons.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Alchemical Formulae" id="ecaf-166b-b41b-e2df" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Wings" hidden="false" id="6fe0-553d-a4b4-ecd6" sortIndex="1">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Wings" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="8b21-740b-b8c3-bdcd">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Homunculus gains a new movement mode: 8”/Flying</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41a2-1c20-d9b0-872c" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Elemental Resistance" hidden="false" id="ea82-b4bb-2b0d-32de" sortIndex="2">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="40"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Elemental Resistance" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="4789-e30e-2064-0849">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Attacks made against the Homunculus that have the Keywords FIRE and/or GAS suffer a -1 DICE penalty to injure it. Also, the Homunculus does not suffer additional BLOOD MARKERS from attacks with Keywords FIRE and/or GAS.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3885-9f1f-4912-6fa7" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Human Hands" hidden="false" id="e2e4-b449-4a68-acb5" sortIndex="5">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Human Hands" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="eb7f-d438-e30f-30e9">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Homunculus can buy and wield any weapon allowed in the Iron Sultanate warband or House of Wisdom list, though they cannot select ELITE only items, grenades or items limited to specific units (such as Assassins). They can also carry a Trench Shield or a Fire Shield. This will apply to the Additional Arms formula as well. Cannot be combined with the Wings formula.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8874-2b55-9f42-e6c0" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6fe0-553d-a4b4-ecd6" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Enslaved Mind" hidden="false" id="8f41-ebe0-81cb-6817" sortIndex="4">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Enslaved Mind" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="f36c-9989-8df3-e799">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Homunculus gains the Keyword FIRETEAM along with one model of your choice in the Warband. The other model can only form a Fireteam with this Homunculi, not with any other models.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29ce-a9ae-f21b-077d" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Massive Size" hidden="false" id="f9f7-089c-a38d-717f" sortIndex="3">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="30"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Massive Size" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="a588-4275-e4f0-94d4">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Homunculus’ size is increased to huge proportions. It now has a base size of 50mm and it gains the Keyword TOUGH. This formula cannot be combined with the Wings formula.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6103-d16f-3bcb-ad17" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="6fe0-553d-a4b4-ecd6" shared="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="add" value="914f-0020-0d97-e217" field="category">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="f9f7-089c-a38d-717f" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <infoLinks>
+                <infoLink name="Tough" id="fa1f-192d-3784-d3b1" hidden="false" type="rule" targetId="3c75-701d-e708-1438"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="914f-0020-0d97-e217" id="c98d-96f0-0bcd-be63" primary="false" name="Tough"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Inhuman Strength" hidden="false" id="26fd-9847-fe97-9aff" sortIndex="6">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Inhuman Strength" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="48e1-7f8d-a4b7-ea90">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The musculature of the Homunculus is reinforced, replaced and strengthened. It now has a base size of 32mm (or 50mm if it also has Massive size). The Homunculus gains +1 DICE to its Melee characteristic and the Keyword STRONG.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e11-5bd3-1c60-3361" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink targetId="afcc-5f24-1c7c-63c4" id="ccbf-b2bc-cc95-06f5" primary="false" name="Strong"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Terrifying Appearance" hidden="false" id="be50-69ba-0551-19c8" sortIndex="7">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Terrifying Appearance" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="9b1f-1416-b4a5-244f">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Whether by captivating beauty or a terrifying appearance, this Homunculus gains the Keyword FEAR.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89f2-1bb9-e187-86ae" includeChildSelections="false"/>
+              </constraints>
+              <categoryLinks>
+                <categoryLink targetId="4f5c-027d-253c-ffa3" id="8e49-3d65-e0dd-2cb9" primary="false" name="Fear"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Additional Arm" hidden="false" id="348d-c104-f4e4-257b" sortIndex="8">
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <profiles>
+                <profile name="Additional Arm" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="cc8f-6d80-2681-7e83">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Homunculus can perform an additional attack ACTION in Melee or Ranged combat without any penalty. Therefore, if making attacks with three melee weapons, only a single weapon would need to be declared an Off-Hand weapon (suffering the appropriate penalties). It has three hands to carry weapons if combined with Human Hands, and may equip weapons and a shield in any combination, as long as it has hands free to do so. 
+
+In this case the Homunculi can make up to two Ranged Attack ACTIONS (if it has sufficient weapons and number of hands to carry them), and up to three Melee Attack ACTIONS (if armed with three one-handed weapons); or one Melee Attack ACTION with a two-handed weapon and one Melee Attack ACTION with a one-handed weapon.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d814-5355-b8ea-e4bb" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Additional Head" hidden="false" id="76ce-4dda-4fdb-75d3" sortIndex="9">
+              <profiles>
+                <profile name="Additional Head" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="7bab-bc64-a8d2-65a2">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Homunculus has two heads and therefore can have two sets of eyes via Alchemical Formula.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b87e-fb2f-d9bf-d5cd" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="5"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name=" Startling Speed" hidden="false" id="8e9e-f55a-cfc2-852c" sortIndex="11">
+              <profiles>
+                <profile name="Startling Speed" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="8914-c889-32e2-ad02">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Homunculus adds +1 DICE to its Dash ACTIONS.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5f1-4e74-9c01-267a" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Seal of Solomon" hidden="false" id="1deb-24f7-5d96-e98e" sortIndex="12">
+              <profiles>
+                <profile name="Seal of Solomon" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="013b-b168-3905-4134">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">This Formula greatly enhances the intelligence of the Homunculus and makes it painfully aware of its artificial existence. It can now buy and use Equipment from the Sultanate Warband Armoury as long as it is not limited to ELITE models. Note that one helmet protects a Homunculus with two heads normally and the Two Heads Formula does not allow the purchase of two different kinds of headgear.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b8de-e9d9-6537-532a" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Gargantuan Size" hidden="true" id="7006-0a35-7bbc-90c6" sortIndex="13">
+              <profiles>
+                <profile name="Gargantuan Size" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="948b-1b20-3697-3be7">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">A Takwin Homunculus can only have this Alchemical Formula if it already has the Human Hands, Inhuman Strength, and Massive Size Alchemical Formulas. The Homunculus can use 1 Weapon that can usually only be taken by a Brazen Bull, and its base size is increased to 60mm.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="04ea-2091-0d12-b550" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="20"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="e2e4-b449-4a68-acb5" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="26fd-9847-fe97-9aff" shared="true"/>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="f9f7-089c-a38d-717f" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Regenerative" hidden="false" id="3114-9038-867e-704a">
+              <profiles>
+                <profile name="Regenerative" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="626f-7648-661f-63c1">
+                  <characteristics>
+                    <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The Homunculus has an astonishing healing factor and can remove one BLOOD MARKER every time it is Activated, if it has any.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e4f-f44e-aae0-3fef" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="25"/>
+                <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Eye Options" id="9038-29ad-1c96-7ab8" hidden="false" sortIndex="10">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="self" shared="true" id="33d8-04df-b6e3-aaa4" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="increment" value="1" field="33d8-04df-b6e3-aaa4">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="76ce-4dda-4fdb-75d3" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hypnotic Eyes" hidden="false" id="7128-e3c5-7ebe-af37">
+                  <costs>
+                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="15"/>
+                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Hypnotic Eyes" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="45c4-790c-aeda-7f5c">
+                      <characteristics>
+                        <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">Enemies suffer -1 DICE to hit the Homunculus in Melee. Does not affect Sniper Priests or enemies with the keyword BLACK GRAIL. Cannot be combined with Hawk Eyes without Two Heads.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1936-6d2c-3345-401c" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Hawk Eyes" hidden="false" id="804f-e412-ea03-aa6d">
+                  <costs>
+                    <cost name="Ducats" typeId="8d43-33fd-332d-17a6" value="10"/>
+                    <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Hawk Eyes" typeId="058c-866b-6487-ccc4" typeName="Ability" hidden="false" id="d444-8cb8-a85b-04e8">
+                      <characteristics>
+                        <characteristic name="Description" typeId="2ecd-b4ff-9e78-a8e2">The eyesight of the Homunculus is based on that of a predatory bird. It can add +1 DICE to its Ranged Attack characteristic. Cannot be combined with Hypnotic Eyes without Two Heads.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="63b1-873d-dbba-0226" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="60" field="8d43-33fd-332d-17a6" scope="parent" shared="true" id="5c86-676d-0d18-d98f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Troop" hidden="false" id="7170-29c9-99f7-d577" targetId="bd43-ddb1-262d-4489" primary="false"/>
+        <categoryLink targetId="4180-5377-2d83-48ba" id="73df-1f53-c38b-cc97" primary="false" name="Artificial"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Glory Points" typeId="f3bb-a7e6-d476-f60b" value="0"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d572-2703-5027-d31e" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Golem" id="acb7-d55e-a718-9d7b" hidden="false" type="rule" targetId="d70f-081c-259b-6cb6"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </gameSystem>
