@@ -5072,6 +5072,7 @@ Unlike Yoke Fiends, Cultists can be promoted to ELITE.</characteristic>
             <modifier type="remove" value="420c-0871-4283-b95b" field="category"/>
             <modifier type="add" value="1cdc-ad46-68bc-8492" field="category"/>
             <modifier type="add" value="1bc3-82b4-ba03-66fc" field="category"/>
+            <modifier type="remove" value="50ae-a540-4d66-0d43" field="category"/>
           </modifiers>
           <conditions>
             <condition type="atLeast" value="1" field="selections" scope="roster" childId="1fda-e6a9-7628-9c49" shared="true" includeChildSelections="true"/>
